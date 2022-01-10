@@ -10,7 +10,7 @@
     font-style: normal;
 }
 [class*='sir-icon-']:before{
-	display: inline-block;
+	display: inline-flex;
    font-family: 'sir';
    font-style: normal;
    font-weight: normal;

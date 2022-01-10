@@ -1,4 +1,10 @@
 /*Other Colors*/
+.pl-0 {
+  padding-left: 0;
+}
+.pr-0 {
+  padding-right: 0;
+}
 .m-4 {
   margin: 1.5rem !important;
 }

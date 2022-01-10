@@ -1,5 +1,11 @@
 @import 'fonts.css';
 /*Other Colors*/
+.pl-0 {
+  padding-left: 0;
+}
+.pr-0 {
+  padding-right: 0;
+}
 .m-4 {
   margin: 1.5rem !important;
 }
@@ -826,7 +832,6 @@ i.icon-medium {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding-right: 0.5rem;
   font-size: 80%;
   font-weight: 600;
   text-transform: uppercase;
@@ -845,9 +850,7 @@ i.icon-medium {
   color: #05396b;
 }
 .badge i {
-  font-size: 19px;
-  margin-bottom: 2px;
-  margin-right: 5px;
+  font-size: 16px;
 }
 .badge-white {
   background: #ffffff;
@@ -870,6 +873,9 @@ i.icon-medium {
 }
 .text-high {
   color: #ab3a7a;
+}
+.bluebg {
+  background: #1ab4d7;
 }
 .whitebg {
   background: #ffffff;
@@ -1120,7 +1126,7 @@ h5 + h3 {
   border-right: 15px solid #2a7062;
 }
 .ribbon-top-left::after {
-  bottom: 4px;
+  bottom: -5px;
   left: 0;
 }
 .ribbon-top-left span {
@@ -1289,7 +1295,15 @@ h5 + h3 {
   background: rgba(1, 33, 64, 0.4);
   color: #ffffff;
   align-items: center;
+  transition: all 0.2s;
   justify-content: center;
+}
+.filter-dark select {
+  border: none;
+  flex: 1;
+}
+.filter-dark .form-check-input {
+  border: none !important;
 }
 .filter-pill {
   padding: 6px 12px;
@@ -1327,7 +1341,12 @@ h5 + h3 {
   border-radius: unset;
   box-shadow: unset;
 }
+.custom-table thead tr:hover {
+  background: transparent;
+  transform: none;
+}
 .custom-table tr {
+  transition: all 0.4s;
   border: unset;
   min-height: 74px;
   background: #ffffff;
@@ -1339,7 +1358,11 @@ h5 + h3 {
   margin-bottom: 6px;
   align-items: center;
 }
+.custom-table tr:hover {
+  background: #f9fcf5;
+}
 .custom-table tr td {
+  position: relative;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -1348,6 +1371,12 @@ h5 + h3 {
 }
 .custom-table tr td.maintd {
   min-width: 18%;
+}
+.custom-table tr td:first-child {
+  flex: unset;
+}
+.custom-table tr td:last-child {
+  flex: unset;
 }
 .custom-table .btn-add-favourite {
   display: inline-flex;
@@ -1360,6 +1389,12 @@ h5 + h3 {
   font-family: "Sirvez Regular";
   text-transform: uppercase;
   font-weight: 400;
+}
+.mui-table.custom-table > thead > tr > th:first-child {
+  flex: unset;
+}
+.mui-table.custom-table > thead > tr > th:last-child {
+  flex: unset;
 }
 .table-status {
   border-radius: 50%;
@@ -1380,4 +1415,88 @@ h5 + h3 {
 }
 .btn-add-favourite {
   color: #889caf;
+}
+.btn-icons a {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.tooltip div {
+  background: #389583;
+}
+.actions {
+  display: none;
+}
+.form-check-input[type=checkbox]:checked {
+  background-color: #5cdb94;
+}
+.form-check-input[type=checkbox]:checked:focus {
+  background-color: #5cdb94;
+}
+.form-check-input:checked {
+  border-color: #5cdb94;
+}
+.form-check-input:checked:focus {
+  border-color: #5cdb94;
+}
+.popover {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: 99999;
+}
+.popover ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 100px;
+}
+.popover ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.popover ul li a {
+  color: #05396b;
+  font-family: "Sirvez Medium";
+  font-size: 16px;
+}
+.popover ul li a:hover {
+  color: #389583;
+}
+.search {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+.search .form-control {
+  border-radius: 80px;
+  border-left: solid 1px #d9dce2;
+  border-right: solid 1px #d9dce2;
+  border-top: solid 1px #d9dce2;
+  border-bottom: solid 1px #d9dce2;
+}
+.search span {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: none !important;
+  font-size: 21px;
+}
+.form-check-input[type=checkbox]:checked:after {
+  margin-left: 0.35rem;
+  margin-top: 0px;
+}
+.product-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.form-check-input {
+  border: 1px solid #d9dce2;
+}
+#individual-actions {
+  display: none;
+  transition: all 0.4s;
+}
+#individual-actions.open {
+  display: flex !important;
 }

@@ -66,4 +66,37 @@ jQuery(function($) {
     $(this).next().slideToggle(200);
   });
 
+
+
+
+
+
+  //Define Defaults - Elements to be targets by user interaction/events
+  var $defaults = {
+    
+    actionbutton: $('.action-btn'),
+    
+}
+
+$defaults.actionbutton.on('click', function(e) {
+ 
+  $(this).next(".actions").fadeIn();
+  $(this).next(".actions").addClass("open");
+  e.stopPropagation();
+});
+
+$('body').on('click', function(e) {
+  if( $(".actions").hasClass("open")) {
+    $(".actions").removeClass("open")
+    $(".actions").fadeOut();
+  }
+});
+
+
+
+
+$('#product-1').click(function() {
+  $("#individual-actions").toggleClass("open");
+});
+
 });
