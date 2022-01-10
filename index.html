@@ -175,7 +175,7 @@
 
 <div class="mui-panel-content">
 <div class="d-flex justify-content-between">
-<div><h5>Project Name</h5>
+<div><h5 class="mt-6">Project Name</h5>
 <h3>3 Smart Installs</h3></div>
 <a href="#" class="fab43-default summary-toggle mr-2 mt-2"><i class="sir sir-icon-remove"></i></a>
 </div>
@@ -183,14 +183,33 @@
 <div class="d-flex align-items-center">
 <div class="levelbar"><ul><li></li><li></li></ul></div><div class="indicator">50%</div></div>
 
-<h5>Project Activity</h5>
+<h5 class="mt-6">Project Activity</h5>
 <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar3.png"></div>
 <div class="badge mediumbg"><i class="sir sir-icon-projects"></i></div></div><div class="activity-text">Anna Notovska has requested final 
   sign off.<div class="date">07 Dec 2021  12:09 AM</div></div>
 
 
 </div>
+<h5 class="mt-8">Project Tasks</h5>
+<div class="activity feed-line d-flex align-items-center">
+<div class="badge badge-circle highbg mr-2"><i class="sir sir-icon-task"></i></div><div class="activity-text">Provide cables 2m</div>
 
+<div class="timer text-high"><i class="sir sir-icon-timer mr-2"></i>2d:12h:08m</div>
+</div>
+
+<h5 class="mt-6">Attachments</h5>
+<div class="activity feed-line mb-4"><a href="#" class="d-flex align-items-center"><i class="sir sir-icon-pdf mr-2"></i>Document-title.pdf</a></div>
+
+
+<form method="post" action="/upload">
+  
+  <label class="file d-flex d-column align-items-center"><img src="assets/images/upload.svg" class="mb-4">
+      Drop a file or click to select one
+      <input type="file" multiple>
+      <!-- use multiple, even if it’s not allowed, to be able to show an info text -->
+  </label>
+  
+</form>
         </div>
         </div>
 
@@ -521,7 +540,7 @@
           <a href="#" class="filter-pill"><i class="sir sir-icon-star-empty mr-2"></i>Starred</a>
                   </div>
 
-<div class="filter-dark " id="individual-actions"><div class="btn-icons d-flex align-items-center ">
+<div class="filter-dark mt-2" id="individual-actions"><div class="btn-icons d-flex align-items-center ">
   <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Check In"><i class="sir sir-icon-check-in icon-large"></i></a>
   <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Print QR Labels"><i class="sir sir-icon-print icon-large"></i></a>
   <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Set Install Date"><i class="sir sir-icon-date icon-large"></i></a>
@@ -529,7 +548,7 @@
   <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Group"><i class="sir sir-icon-group icon-large"></i></a>
 
   <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Ungroup"><i class="sir sir-icon-ungroup icon-large"></i></a>
-  
+
   <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Delete"><i class="sir sir-icon-remove icon-small"></i></a>
 
 </div>
