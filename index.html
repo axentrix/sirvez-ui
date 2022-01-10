@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.css" rel="stylesheet" type="text/css" />
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet" />
+    <link href="assets/css/start.css" rel="stylesheet" />
+    <link href="assets/css/iconfonts/sirvez-icons.css" rel="stylesheet" />
+
+
+
+    <!-- Browser JSX compiler (for development only) -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="mainlayout">
+      <div id="sidedrawer" class="mui--no-user-select">
+        <div class="mui-sidedrawer-inner">
+        <div id="sidedrawer-brand" class="mui--appbar-line-height brandbg">
+          <span class="mui--text-title"><img src="assets/images/strivelogo.svg" width="130"></span>
+          <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+                    <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+        </div>
+        <div class="mui-divider"></div>
+        <ul>
+          <li>
+            <span><i class="sir sir-icon-dashboard"></i>Dashboard</span>
+          
+          </li>
+          <li>
+            <span><i class="sir sir-icon-projects"></i>Projects</span>
+            <ul>
+              <li><a href="#"><i class="sir sir-icon-new"></i>New Project</a></li>
+              <li><a href="#"><i class="sir sir-icon-live-project"></i>Live Projects</a></li>
+              
+            </ul>
+          </li>
+          <li>
+            <span><i class="sir sir-icon-workflow"></i>Workflows</span>
+            <ul>
+              <li><a href="#"><i class="sir sir-icon-new"></i>New Workflow</a></li>
+              <li><a href="#"><i class="sir sir-icon-task"></i>Workflow Tasks</a></li>
+              <li><a href="#"><i class="sir sir-icon-board"></i>Boards</a></li>
+              <li><a href="#"><i class="sir sir-icon-task-calendar"></i>Workflow Calendar</a></li>
+              <li><a href="#"><i class="sir sir-icon-workflow"></i>Workflow Overview</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span><i class="sir sir-icon-customers"></i>Customers</span>
+            <ul>
+              <li><a href="#"><i class="sir sir-icon-new"></i>New Customer</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <span><i class="sir sir-icon-product"></i>Products</span>
+            <ul>
+              <li><a href="#"><i class="sir sir-icon-new"></i>New Product</a></li>
+              <li><a href="#"><i class="sir sir-icon-product-library"></i>Forms Overview</a></li>
+              <li><a href="#"><i class="sir sir-icon-manufacturer"></i>Manufacturers</a></li>
+              <li><a href="#"><i class="sir sir-icon-supplier"></i>Suppliers</a></li>
+              <li><a href="#"><i class="sir sir-icon-main"></i>Data Feeds</a></li>
+              <li><a href="#"><i class="sir sir-icon-delivery"></i>Deliveries</a></li>
+              <li><a href="#"><i class="sir sir-icon-site"></i>Delivery Sites</a></li>
+
+            </ul>
+          </li>
+
+
+
+          <li>
+            <span><i class="sir sir-icon-form"></i>Forms</span>
+            <ul>
+              <li><a href="#"><i class="sir sir-icon-new"></i>New Form</a></li>
+              <li><a href="#"><i class="sir sir-icon-form-created"></i>Form Overview</a></li>
+              
+
+            </ul>
+          </li>
+          <li>
+            <span><i class="sir sir-icon-calendar"></i>Booking Calendar</span>
+          
+          </li>
+
+          <li>
+            <span><i class="sir sir-icon-service-desk"></i>Service Desk</span>
+            <ul>
+              <li><a href="#"><i class="sir sir-icon-new"></i>New Ticket</a></li>
+              <li><a href="#"><i class="sir sir-icon-helpdesk"></i>Helpdesk</a></li>
+              <li><a href="#"><i class="sir sir-icon-board"></i>Helpdesk Boards</a></li>
+              <li><a href="#"><i class="sir sir-icon-workflow"></i>Helpdesk Workflows</a></li>
+              <li><a href="#"><i class="sir sir-icon-task-calendar"></i>Helpdesk Calendar</a></li>
+              <li><a href="#"><i class="sir sir-icon-contracts"></i>Contracts</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+      <header id="header">
+        <div class="mui-appbar mui--appbar-line-height">
+       
+          
+
+        
+            
+               
+                
+                  <div class="appbar-left"> 
+                    <span class="mui--text-title mui--visible-xs-inline-block brandbg"><img src="assets/images/strivelogo.svg" width="80"></span>
+                    <img src="assets/images/logo_sirvez.png" width="80"></div>
+                
+                
+                  <div class="d-flex mui--text-right appbar-right" >
+                    <ul class="mui-list--inline mui--text-body2" id="topmenu">
+                      <li><a href="#"><i class="sir sir-icon-settings"></i></a></li>
+                      <li><a href="#"><i class="sir sir-icon-notification"></i></a></li>
+                      <li class="mui-dropdown ">
+                        
+                     
+                        
+                        
+                        <a href="#" data-mui-toggle="dropdown"><div class="avatar"><img src="assets/images/avatars/avatar1.png"></div></a>
+                        <ul class="mui-dropdown__menu mui-dropdown__menu--right">
+                          <li><a href="#">My Profile</a></li>
+                          <li><a href="#">Logout</a></li>
+                      
+                        </ul>
+                      
+                      
+                      </li>
+                    </ul>
+                  </div>
+              
+          
+
+
+
+
+         
+        </div>
+      </header>
+      <div id="content-wrapper">
+       
+        <div class="mui-panel" id="project-summary">
+
+<div class="mui-panel-content">
+<div class="d-flex justify-content-between">
+<div><h5>Project Name</h5>
+<h3>3 Smart Installs</h3></div>
+<a href="#" class="fab43-default summary-toggle mr-2 mt-2"><i class="sir sir-icon-remove"></i></a>
+</div>
+<h5>Project Completion</h5>
+<div class="d-flex align-items-center">
+<div class="levelbar"><ul><li></li><li></li></ul></div><div class="indicator">50%</div></div>
+
+<h5>Project Activity</h5>
+<div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar3.png"></div>
+<div class="badge mediumbg"><i class="sir sir-icon-projects"></i></div></div><div class="activity-text">Anna Notovska has requested final 
+  sign off.<div class="date">07 Dec 2021  12:09 AM</div></div>
+
+
+</div>
+
+        </div>
+        </div>
+
+        <div class="mui-container" id="main">
+          <div class="w-100 d-flex">
+          <a href="#" class="fab43 summary-toggle mr-2 mt-2"><i class="sir sir-icon-arrow-left"></i></a>
+<div class="main-content mt-2">
+<div class="mui-panel-top">
+  <ul class="mui-tabs__bar mui-tabs__bar--justified custom-tabs" id="project-tabs">
+    <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-justified-1"><i class="sir sir-icon-main"></i>Main</a></li>
+    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2"><i class="sir sir-icon-location"></i>Locations</a></li>
+    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3"><i class="sir sir-icon-product"></i>Products</a></li>
+    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-4"><i class="sir sir-icon-task"></i>Tasks<span class="notification">3</span></a></li>
+ 
+    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-5"><i class="sir sir-icon-proposal"></i>Proposals</a></li>
+    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-6"><i class="sir sir-icon-calendar"></i>Calendar</a></li>
+    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-7"><i class="sir sir-icon-activity"></i>Activity</a></li>
+  </ul></div>
+  <div class="mui-tabs__pane mui--is-active col-md-12" id="pane-justified-1">
+    
+    <div class="mui-panel-bottom">
+<div class="mui-panel-content">
+  <div class="ribbon ribbon-top-left"><span>
+   
+    
+    <h3>10</h3><h6>nov 2021</h6><h6>12:30am</h6></span></div>
+<div class="ml-12 d-flex justify-content-between"><div><h2>3 Smart Installs</h2>
+<div class="d-flex align-items-center"><span class="id mr-2">#123</span><span class="badge"><i class="sir sir-icon-live-project"></i>Live</span></div></div>
+
+
+<div class="ml-auto d-flex"> <button class="mui-btn">Actions <i class="sir sir-icon-more-actions"></i></button>
+  <button class="mui-btn mui-btn--primary">Sign Off <i class="sir sir-icon-sign-off"></i></button></div>
+</div>
+
+
+<div class="bs-stepper" id="stepper-claim">
+  <div class="bs-stepper-header">
+
+      <div class="step">
+          <button type="button" class="step-trigger" data-toggle="tooltip" data-placement="top" title="Anna completed this on 7 Dec 2021">
+              <span class="bs-stepper-circle completed" ><span class="sir sir-icon-tick"></span></span>
+              <span class="bs-stepper-label">
+                <div class="activity feed-line d-flex"><div class="avatar mr-2"><img src="assets/images/avatars/avatar2.png"></div>
+            <div class="d-column d-flex align-items-start"> <div class="activity-text d-flex "><a href="">Anna Notovska</a> 
+               <div class="date">07 Dec 2021  12:09 AM</div> </div>
+               <h4>Prospect</h4>
+              
+              </div>
+             
+                
+                
+                </div>
+
+
+              </span>
+          </button>
+      </div>
+      <div class="line"></div>
+      <div class="step">
+          <button type="button" class="step-trigger">
+              <span class="bs-stepper-circle current"><span class="sir sir-icon-sandclock"></span></span>
+
+              <div class="activity feed-line d-flex"><div class="avatar mr-2"><img src="assets/images/avatars/avatar5.png"></div>
+            <div class="d-column d-flex align-items-start"> <div class="activity-text d-flex "><a href="">Anna Notovska</a> 
+               <div class="date">07 Dec 2021  12:09 AM</div> </div>
+               <h4>Installation</h4>
+              
+              </div>
+             
+                
+                
+                </div>
+
+          </button>
+      </div>  
+     
+    <div class="line"></div>
+
+      <div class="step">
+          <button type="button" class="step-trigger">
+              <span class="bs-stepper-circle"></span>
+
+              <div class="activity feed-line d-flex"><div class="avatar mr-2 d-none"><img src="assets/images/avatars/avatar2.png"></div>
+              <div class="d-column d-flex align-items-start inactive"> <div class="activity-text d-flex d-none"><a href="">Anna Notovska</a> 
+                 <div class="date">07 Dec 2021  12:09 AM</div> </div>
+                 <h4 class="inactive">Signoff</h4><span>Pending</span>
+                
+                </div>
+               
+                  
+                  
+                  </div>
+  
+          </button>
+      </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+<div class="mui-panel mui-panel-transparent d-flex mt-2">
+
+  <div class="col-md-4  pr-2"><div class="mui-panel"><div class="mui-panel-header"><h5>Account Details</h5></div><div class="mui-panel-content">
+    <h4><a href="#">Company Name</a></h4>
+    <div class="activity feed-line d-flex align-items-start"><div class="avatar mr-2"><img src="assets/images/avatars/avatar5.png"></div>
+    <div class="d-column d-flex ">  <div class="activity-text d-flex "><a href="#">Jeremy</a> 
+      </div> <div class="subtext">Account Manager</div></div>
+    
+      <img src="assets/images/companylogo.png">
+     </div>
+
+  </div></div></div>
+<div class="col-md-4 pl-2 pr-2"><div class="mui-panel"><div class="mui-panel-header d-flex align-items-center justify-content-between"><h5>Customer Feedback</h5><small>Pre-project Start</small></div><div class="mui-panel-content">
+
+  <div class="activity feed-line d-flex"><div class="mr-2"><i class="sir sir-icon-form"></i></div>
+  <div class="d-column d-flex align-items-start"> <div class="activity-text d-flex "><a href="#">Jeff</a> 
+     <div class="date ml-2">07 Dec 2021  12:09 AM</div> </div>
+     <h4><a href="#">Pre-project Enquiry Form</a></h4>
+     <div class="subtext">22  questions</div>
+    
+    
+    </div>
+   
+    <button class="mui-btn w-100 mt-4">View Feedback</button>
+      
+      </div>
+
+
+</div></div></div>
+<div class="col-md-4 pl-2 "><div class="mui-panel"><div class="mui-panel-header d-flex align-items-center justify-content-between"><h5>Final Sign Off Feedback</h5></div><div class="mui-panel-content">
+  <div class="ribbon ribbon-top-right"><span>
+   <ul class="star-rating d-flex align-items-center text-white">
+<li><i class="sir sir-icon-star"></i></li>
+<li><i class="sir sir-icon-star"></i></li>
+<li><i class="sir sir-icon-star"></i></li>
+<li><i class="sir sir-icon-star"></i></li>
+<li><i class="sir sir-icon-star"></i></li>
+   </ul>
+    
+    </span></div>
+
+
+
+
+  <div class="activity feed-line d-flex"><div class="mr-2"><i class="sir sir-icon-form"></i></div>
+  <div class="d-column d-flex align-items-start"> <div class="activity-text d-flex "><a href="#">Lee</a> 
+     <div class="date ml-2">07 Dec 2021  12:09 AM</div> </div>
+     <h4><a href="#">Pre-project Enquiry Form</a></h4>
+     <div class="subtext">10 questions</div>
+    
+    
+    </div>
+   
+    <button class="mui-btn w-100 mt-4">View Feedback</button>
+      
+      </div>
+
+
+</div></div></div>
+
+
+
+<div class="col-md-4  mt-4 pr-2"><div class="mui-panel"><div class="mui-panel-header d-flex align-items-center"><h5>Project Team</h5><a href="#" class="fab43 fab-absolute"><i class="sir sir-icon-user-add"></i></a></div><div class="mui-panel-content">
+
+  <div class="mui-btn mui-btn-remove justify-content-between"><div class="d-flex"><div class="avatar mr-2"><img src="assets/images/avatars/avatar5.png"></div>
+  <div class="d-column d-flex ">  <div class="activity-text d-flex ">Jeremy
+    </div> <div class="subtext">Account Manager</div></div></div>
+    <i class="sir sir-icon-remove"></i>
+  
+
+  </div>
+
+  <div class="mui-btn mui-btn-remove justify-content-between"><div class="d-flex"><div class="avatar mr-2"><img src="assets/images/avatars/avatar4.png"></div>
+  <div class="d-column d-flex ">  <div class="activity-text d-flex ">Jeremy
+    </div> <div class="subtext">Manager</div></div></div>
+    <i class="sir sir-icon-remove"></i>
+  
+
+  </div>
+
+</div></div></div>
+
+
+
+<div class="col-md-4  mt-4 pl-2 pr-2"><div class="mui-panel"><div class="mui-panel-header d-flex align-items-center justify-content-between"><h5>Project Summary</h5>
+
+<span class="badge badge-white">#970</span>
+</div><div class="mui-panel-content">
+
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+</div></div></div>
+
+<div class="col-md-4  mt-4 pl-2"><div class="mui-panel"><div class="mui-panel-header d-flex align-items-center justify-content-between"><h5>Project Info</h5>
+
+  <span class="badge badge-white">#970</span>
+  </div><div class="mui-panel-content">
+  
+   <ul class="list-info">
+<li><span class="d-flex"><i class="sir sir-icon-tag mr-2"></i>Sales Order</span><strong>#12324</strong></li>
+<li><span class="d-flex"><i class="sir sir-icon-credit-card mr-2"></i>Purchase Order</span><strong>#12324</strong></li>
+<li><span class="d-flex"><i class="sir sir-icon-company mr-2"></i>Company Owner</span><strong>StriveAV</strong></li>
+<li><span class="d-flex"><i class="sir sir-icon-date mr-2"></i>Survey Date</span><strong>12 Nov 2021</strong></li>
+<li><span class="d-flex"><i class="sir sir-icon-unknown mr-2"></i>Project ID</span><strong>970</strong></li>
+   </ul>
+
+
+
+  </div></div></div>
+
+
+</div>
+  </div>
+  <div class="mui-tabs__pane" id="pane-justified-2">
+    <div class="mui-panel-bottom">
+      <div class="mui-panel-content"><div class="d-flex w-100 justify-content-between align-items-center"><h3>Locations</h3><div class="ml-auto d-flex"><a href="#" class="fab43"><i class="sir sir-icon-plus icon-small "></i></a><a href="#" class="ml-2 fab43"><i class="sir icon-large sir-icon-xls-download"></i></a></div></div></div></div>
+      <div class="mui-panel mui-panel-transparent d-flex mt-4">
+        <div class="filter-dark">
+<a href="#" class="filter-pill selected">All</a>
+<a href="#" class="filter-pill">Signed Off</a>
+<a href="#" class="filter-pill">Not Signed Off</a>
+<a href="#" class="filter-pill">Out of Scope</a>
+<a href="#" class="filter-pill"><i class="sir sir-icon-star-empty mr-2"></i>Starred</a>
+        </div>
+        <table class="mui-table custom-table">
+          <thead>
+            <tr>
+              <th class="maintd">Room Number</th>
+              <th>Location ID</th>
+              <th>Site</th>
+              <th>Products</th>
+              <th>Images</th>
+              <th>Tasks</th>
+              <th>Floor</th>
+              <th>Signed Off <div class="d-flex"><span class="mr-2">SOW</span><span>Final</span></div></th>
+              <th>Actions</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="maintd"><a href="#" class="btn-add-favourite"><i class="fa fa-star-o"></i></a>Location Name</td>
+              <td>23435</td>
+              <td>Site Name</td>
+              <td>2</td>
+              <td>8</td>
+              <td>1</td>
+              <td>Site Name</td>
+              <td><div class="table-status yes mr-2"><i class="sir sir-icon-tick"></i></div><div class="table-status no"><i class="sir sir-icon-tick"></i></div></td>
+              <td><a href="#" class="fab43-default" data-popover-content="#actions-location-23435" data-toggle="popover" data-placement="right"><i class="sir-icon-menu-more icon-large"></i></a>
+              <div id="actions-location-23435" style="display:none;">
+              
+                <ul class="actions"  >
+                <li><a href="">Overview</a></li>
+<li><a href="">Modify</a></li>
+<li><a href="">Duplicate</a></li>
+<li><a href="">Print</a></li>
+<li><a href="">Delete</a></li>
+             </ul></div>
+              </td>
+            </tr>
+            <tr>
+             
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+
+       </div>
+  
+  </div>
+
+  <div class="mui-tabs__pane" id="pane-justified-3">
+    <div class="mui-panel-bottom">
+      <div class="mui-panel-content"><div class="d-flex w-100 justify-content-between"><h2>Products</h2></div><div class="ml-auto d-flex"><a href="#" class="sir sir-icon-plus"></a></div></div></div>
+      <div class="mui-panel mui-panel-transparent d-flex mt-4">
+        <div class="mui-panel-content"></div></div>
+  
+  </div>
+
+
+  <div class="mui-tabs__pane" id="pane-justified-4">
+    <div class="mui-panel-bottom">
+      <div class="mui-panel-content"><div class="d-flex w-100 justify-content-between"><h2>Tasks</h2></div><div class="ml-auto d-flex"><a href="#" class="sir sir-icon-plus"></a></div></div></div>
+      <div class="mui-panel mui-panel-transparent d-flex mt-4">
+        <div class="mui-panel-content"></div></div>
+  
+  </div>
+
+
+  <div class="mui-tabs__pane" id="pane-justified-5">
+    <div class="mui-panel-bottom">
+      <div class="mui-panel-content"><div class="d-flex w-100 justify-content-between"><h2>Proposals</h2></div><div class="ml-auto d-flex"><a href="#" class="sir sir-icon-plus"></a></div></div></div>
+      <div class="mui-panel mui-panel-transparent d-flex mt-4">
+        <div class="mui-panel-content"></div></div>
+  
+  </div>
+
+  <div class="mui-tabs__pane" id="pane-justified-6">
+    <div class="mui-panel-bottom">
+      <div class="mui-panel-content"><div class="d-flex w-100 justify-content-between"><h2>Calendar</h2></div><div class="ml-auto d-flex"><a href="#" class="sir sir-icon-plus"></a></div></div></div>
+      <div class="mui-panel mui-panel-transparent d-flex mt-4">
+        <div class="mui-panel-content"></div></div>
+  
+  </div>
+
+
+  <div class="mui-tabs__pane" id="pane-justified-7">
+    <div class="mui-panel-bottom">
+      <div class="mui-panel-content"><div class="d-flex w-100 justify-content-between"><h2>Activity</h2></div><div class="ml-auto d-flex"><a href="#" class="sir sir-icon-plus"></a></div></div></div>
+      <div class="mui-panel mui-panel-transparent d-flex mt-4">
+        <div class="mui-panel-content"></div></div>
+  
+  </div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+      </div>
+      <footer id="footer" style="display:none;">
+        <div class="mui-container-fluid">
+       
+        </div>
+      </footer>
+
+     
+    </div>
+   
+
+<!-- <script src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
+<script src="//cdn.muicss.com/mui-0.10.3/react/mui-react.js"></script>-->
+<script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+<script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+
+
+<script>
+$(document).ready(function () {
+  var stepper = new Stepper(document.querySelector('.bs-stepper'));
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+
+  $('[data-toggle="popover"]').popover({
+        html : true,
+        content: function() {
+          var content = $(this).attr("data-popover-content");
+          return $(content).children(".popover-body").html();
+        },
+        title: function() {
+          var title = $(this).attr("data-popover-content");
+          return $(title).children(".popover-heading").html();
+        }
+    });
+});
+
+
+</script>
+  </body>
+</html>

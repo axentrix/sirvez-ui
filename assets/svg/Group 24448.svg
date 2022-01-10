@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.232" height="17.5" viewBox="0 0 20.232 17.5">
+  <g id="Group_24448" data-name="Group 24448" transform="translate(-585.426 -418.213)">
+    <g id="_3d-cube-scan" data-name="3d-cube-scan" transform="translate(588.909 418.963)">
+      <path id="Path_13984" data-name="Path 13984" d="M7,20.674h8.105a3.829,3.829,0,0,0,4.053-4.053V15" transform="translate(-3.158 -4.674)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_14101" data-name="Path 14101" d="M19.158,15H11.053A3.829,3.829,0,0,0,7,19.053v1.621" transform="translate(-7 -15)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_13985" data-name="Path 13985" d="M6.7,9.26,11,11.748l4.263-2.472" transform="translate(-3.101 -3.586)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_13986" data-name="Path 13986" d="M12,16.737V12.32" transform="translate(-4.106 -4.166)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_13987" data-name="Path 13987" d="M9.9,6.235,7.31,7.677A2.305,2.305,0,0,0,6.24,9.493v2.748a2.284,2.284,0,0,0,1.07,1.816L9.9,15.5a2.32,2.32,0,0,0,2.018,0l2.594-1.443a2.305,2.305,0,0,0,1.07-1.816V9.493a2.284,2.284,0,0,0-1.07-1.816L11.922,6.235A2.266,2.266,0,0,0,9.9,6.235Z" transform="translate(-3.014 -2.968)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <path id="Path_14099" data-name="Path 14099" d="M2,16.5H6.863" transform="translate(584.176 414.863)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Path_14100" data-name="Path 14100" d="M2,12.5H4.432" transform="translate(584.176 415.621)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

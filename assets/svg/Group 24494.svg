@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.913" height="16.926" viewBox="0 0 15.913 16.926">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4969" data-name="Rectangle 4969" width="15.913" height="16.926" fill="none" stroke="#292d32" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_24494" data-name="Group 24494" transform="translate(0 0)">
+    <g id="Group_24493" data-name="Group 24493" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_14107" data-name="Path 14107" d="M11.983,7.009A3.456,3.456,0,1,1,8.527,3.553,3.456,3.456,0,0,1,11.983,7.009Z" transform="translate(-0.573 -0.401)" fill="none" stroke="#292d32" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_14108" data-name="Path 14108" d="M8.4,13.785c-3.181,0-5.76,1.805-5.76,4.032h11.52C14.164,15.59,11.585,13.785,8.4,13.785Z" transform="translate(-0.299 -1.557)" fill="none" stroke="#292d32" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_14109" data-name="Path 14109" d="M2.985,9.172H1.932A1.183,1.183,0,0,1,.75,7.99V6.27A1.183,1.183,0,0,1,1.932,5.088H2.985a.121.121,0,0,1,.122.122V9.051A.122.122,0,0,1,2.985,9.172Z" transform="translate(-0.085 -0.575)" fill="none" stroke="#292d32" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_14110" data-name="Path 14110" d="M14.654,9.172h1.052A1.183,1.183,0,0,0,16.888,7.99V6.27a1.183,1.183,0,0,0-1.182-1.182H14.654a.121.121,0,0,0-.122.122V9.051A.122.122,0,0,0,14.654,9.172Z" transform="translate(-1.641 -0.575)" fill="none" stroke="#292d32" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_14111" data-name="Path 14111" d="M3,4.39A5.946,5.946,0,0,1,13.89,4.238" transform="translate(-0.338 -0.085)" fill="none" stroke="#292d32" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_14112" data-name="Path 14112" d="M2.365,9.933v1.375a.7.7,0,0,0,.7.7H4.471" transform="translate(-0.267 -1.122)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

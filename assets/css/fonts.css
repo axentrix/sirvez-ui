@@ -1,0 +1,48 @@
+@font-face {font-family: "Sirvez Regular";
+  src: url("fonts/circbook.eot"); /* IE9*/
+  src: url("fonts/circbook.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("fonts/circbook.woff2") format("woff2"), /* chrome、firefox */
+  url("fonts/circbook.woff") format("woff"), /* chrome、firefox */
+  url("fonts/circbook.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("fonts/circbook.svg#Circular Std Book") format("svg"); /* iOS 4.1- */
+}
+
+
+@font-face {font-family: "Sirvez Bold";
+  src: url("fonts/961a181da27e7cbc072ec2fb5bbfe2a9.eot"); /* IE9*/
+  src: url("fonts/961a181da27e7cbc072ec2fb5bbfe2a9.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("fonts/961a181da27e7cbc072ec2fb5bbfe2a9.woff2") format("woff2"), /* chrome、firefox */
+  url("fonts/961a181da27e7cbc072ec2fb5bbfe2a9.woff") format("woff"), /* chrome、firefox */
+  url("fonts/961a181da27e7cbc072ec2fb5bbfe2a9.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("fonts/961a181da27e7cbc072ec2fb5bbfe2a9.svg#Circular Std Book") format("svg"); /* iOS 4.1- */
+}
+
+
+
+@font-face {font-family: "Sirvez Medium";
+  src: url("fonts/9475d6a0b79c164f9f605673714e75d9.eot"); /* IE9*/
+  src: url("fonts/9475d6a0b79c164f9f605673714e75d9.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("fonts/9475d6a0b79c164f9f605673714e75d9.woff2") format("woff2"), /* chrome、firefox */
+  url("fonts/9475d6a0b79c164f9f605673714e75d9.woff") format("woff"), /* chrome、firefox */
+  url("fonts/9475d6a0b79c164f9f605673714e75d9.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("fonts/9475d6a0b79c164f9f605673714e75d9.svg#Circular Std Book") format("svg"); /* iOS 4.1- */
+}
+
+
+@font-face {font-family: "Sirvez Black";
+  src: url("fonts/f1a22f6f15d272c7aa56da8b2c91f5e5.eot"); /* IE9*/
+  src: url("fonts/f1a22f6f15d272c7aa56da8b2c91f5e5.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("fonts/f1a22f6f15d272c7aa56da8b2c91f5e5.woff2") format("woff2"), /* chrome、firefox */
+  url("fonts/f1a22f6f15d272c7aa56da8b2c91f5e5.woff") format("woff"), /* chrome、firefox */
+  url("fonts/f1a22f6f15d272c7aa56da8b2c91f5e5.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("fonts/f1a22f6f15d272c7aa56da8b2c91f5e5.svg#Circular Std Book") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Sirvez Light";
+  src: url("fonts/circlight.eot"); /* IE9*/
+  src: url("fonts/circlight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("fonts/circlight.woff2") format("woff2"), /* chrome、firefox */
+  url("fonts/circlight.woff") format("woff"), /* chrome、firefox */
+  url("fonts/circlight.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+ 
+}

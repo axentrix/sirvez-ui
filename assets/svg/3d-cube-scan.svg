@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.5" height="21.5" viewBox="0 0 21.5 21.5">
+  <g id="_3d-cube-scan" data-name="3d-cube-scan" transform="translate(-1.25 -1.25)">
+    <path id="Path_13983" data-name="Path 13983" d="M2,9V7A4.724,4.724,0,0,1,7,2H17a4.724,4.724,0,0,1,5,5V9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Path_13984" data-name="Path 13984" d="M2,15v2a4.724,4.724,0,0,0,5,5H17a4.724,4.724,0,0,0,5-5V15" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Path_13985" data-name="Path 13985" d="M6.7,9.26,12,12.33l5.26-3.05" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_13986" data-name="Path 13986" d="M12,17.77V12.32" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_13987" data-name="Path 13987" d="M10.76,6.29,7.56,8.07a2.844,2.844,0,0,0-1.32,2.24V13.7a2.818,2.818,0,0,0,1.32,2.24l3.2,1.78a2.862,2.862,0,0,0,2.49,0l3.2-1.78a2.844,2.844,0,0,0,1.32-2.24V10.31a2.818,2.818,0,0,0-1.32-2.24l-3.2-1.78A2.8,2.8,0,0,0,10.76,6.29Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>
