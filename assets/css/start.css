@@ -785,6 +785,9 @@ i.icon-small {
 i.icon-large {
   font-size: 24px !important;
 }
+i.icon-medium {
+  font-size: 20px !important;
+}
 .mui-panel {
   position: relative;
   display: -webkit-box;
