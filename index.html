@@ -33,12 +33,12 @@
 
     <link href="assets/css/start.css" rel="stylesheet" />
     <link href="assets/css/iconfonts/sirvez-icons.css" rel="stylesheet" />
-
+    <link href="assets/css/iconfonts/sirvez-icons-2.css" rel="stylesheet" />
 
 
    
   </head>
-  <body></body>
+  <body>
     <div id="mainlayout">
       <div id="sidedrawer" class="mui--no-user-select">
         <div class="mui-sidedrawer-inner">
@@ -458,7 +458,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="maintd"><a href="#" class="btn-add-favourite"><i class="fa fa-star-o"></i></a>Location Name</td>
+              <td class="maintd"><a href="#" class="btn-add-favourite"><i class="sir sir-icon-star-empty"></i></a>Location Name</td>
               <td>23435</td>
               <td>Site Name</td>
               <td>2</td>
@@ -610,9 +610,43 @@
 
   <div class="mui-tabs__pane" id="pane-justified-4">
     <div class="mui-panel-bottom">
-      <div class="mui-panel-content"><div class="d-flex w-100 justify-content-between"><h2>Tasks</h2></div><div class="ml-auto d-flex"><a href="#" class="sir sir-icon-plus"></a></div></div></div>
+      <div class="mui-panel-content"><div class="d-flex w-100 justify-content-between"><h3>Tasks</h3></div><div class="ml-auto d-flex"><a href="#" class="fab34">
+        <i class="sir sir-icon-plus"></i>
+      </a></div></div></div>
       <div class="mui-panel mui-panel-transparent d-flex mt-4">
-        <div class="mui-panel-content"></div></div>
+        <div class="filter-dark align-items-center justify-content-start">
+          <div class="d-flex p-2  align-items-center">
+          <select class="form-select mr-2">
+            <option>Select user...</option>
+            <option>Jeremy</option>
+            <option>Anna</option>
+           
+          
+          </select><div class="mui-btn mui-btn-remove justify-content-between"><div class="d-flex align-items-center"><div class="avatar mr-2"><img src="assets/images/avatars/avatar4.png"></div>
+            <div class="activity-text d-flex ">Jeremy
+           </div>
+            <i class="sir sir-icon-remove"></i></div>
+          
+        
+          </div></div>
+          <div class="ml-auto">
+            <a href="#" class="filter-pill selected">All</a>
+            <a href="#" class="filter-pill">Starred</a>
+            <a href="#" class="filter-pill">Overdue</a>
+         
+            
+          </div>
+
+
+          <div class="ml-auto">
+            <a href="#" class="filter-pill"><span class="circle criticalbg"></span>Critical</a>
+            <a href="#" class="filter-pill"><span class="circle highbg"></span>High</a>
+            <a href="#" class="filter-pill"><span class="circle mediumbg"></span>Medium</a>
+            <a href="#" class="filter-pill"><span class="circle normalbg"></span>Normal</a>
+            
+          </div>
+  
+        </div></div>
   
   </div>
 
@@ -639,33 +673,99 @@
             <div class="d-flex d-row flex-1 justify-content-between mr-2">
           <div><h5>Proposal Name</h5>
           <h3>Main-Year 3</h3> </div>
+
+
+
+        
           <div class="btn-icons d-flex align-items-center justify-content-between">
 <a href="#" class="mui-btn mui-btn--primary"><i class="sir sir-icon-pdf"></i>Download</a>
-<a href="#" class="mui-btn mui-btn--primary ml-2"><i class="sir sir-icon-mail"></i>Send Proposal</a>
+<a href="#" class="mui-btn mui-btn--primary ml-2"><i class="siz siz-icon-check"></i>Approve & Send</a>
+<div class="d-relative">
+<a href="#" class="fab43-default mr-2 ml-4 action-btn" id="open-attachments">
+  <i class="sir sir-icon-attachment icon-medium"></i></a>
+  
+   <div id="proposal-attachments" class="popover actions card open">
+<div class="card-body">
+<fieldset><legend><strong>PDF Proposal Inclusion:</strong></legend>
 
-<a href="#" class="fab43-default mr-2 ml-2">
-  <i class="sir sir-icon-attachment icon-large"></i></a>
-         
-  <a href="#" class="fab43-default mr-2 ml-2">
-  <i class="sir sir-icon-menu-more icon-large"></i></a>
+  <div class="form-check border-bottom">
+    <input class="form-check-input" type="checkbox" value="" id="attachment-1">
+   <label for="attachment-1"> Breakdown of rooms</label>
+  </div>
+
+
+  <div class="form-check border-bottom">
+    <input class="form-check-input" type="checkbox" value="" id="attachment-2">
+   <label for="attachment-2">Project Summary</label>
+  </div>
+
+  
+  <div class="form-check border-bottom">
+    <input class="form-check-input" type="checkbox" value="" id="attachment-3">
+   <label for="attachment-3">Location Notes</label>
+  </div>
+  <div class="form-check border-bottom">
+    <input class="form-check-input" type="checkbox" value="" id="attachment-4">
+   <label for="attachment-4">Warranty</label>
+  </div>
+
+  <div class="form-check border-bottom">
+    <input class="form-check-input" type="checkbox" value="" id="attachment-5">
+   <label for="attachment-5"> Location Images</label>
+  </div>
+
+  <div class="form-check border-bottom">
+    <input class="form-check-input" type="checkbox" value="" id="attachment-6">
+   <label for="attachment-6">  Product Description</label>
+  </div>
+  <div class="form-check border-bottom">
+    <input class="form-check-input" type="checkbox" value="" id="attachment-7">
+   <label for="attachment-7">Product Manufacturers</label>
+  </div>
+  <div class="form-check border-bottom">
+    <input class="form-check-input" type="checkbox" value="" id="attachment-8">
+   <label for="attachment-8"> Product Suppliers</label>
+  </div>
+  
+
+  
+
+</fieldset>
+</div>
+   </div>      
+
+  </div>
+
+
+  <a class="accordion-button fab43-default ml-2" type="button"
+  data-mdb-toggle="collapse"
+  data-mdb-target="#proposal-1"
+  aria-expanded="false"
+  aria-controls="proposal-1"> </a>
         </div></div>
-      <div class="d-flex align-items-start">
-      <a class="accordion-button" type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#proposal-1"
-      aria-expanded="false"
-      aria-controls="proposal-1"> </a>
-    </div>
+      
+     
+   
       </div>
 <div class="proposal-open" id="proposal-1">
-<div class="filter p-2 mt-2 justify-content-start" id="individual-actions-proposal"><div class="btn-icons d-flex align-items-center ">
+<div class="filter p-2 mt-2 d-flex justify-content-between align-items-center" id="individual-actions-proposal">
+
+  <div class="btn-icons d-flex align-items-center justify-content-between">
+    <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Import..."><i class="sir sir-icon-import icon-large"></i></a>
+    <a href="#" class="fab43 bluebg" data-mdb-toggle="tooltip" title="Import from XERO"><img src="assets/images/xero.png"></i></a>
 
 
-  <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Group Product"><i class="sir sir-icon-group icon-large"></i></a>
+  </div>
+  
+  
+  <div class="btn-icons d-flex align-items-center ">
+
+
+  <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Group Products"><i class="sir sir-icon-group icon-large"></i></a>
 
   <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Ungroup Products"><i class="sir sir-icon-ungroup icon-large"></i></a>
 
-  <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Add to Project"><i class="sir sir-icon-import-to-project icon-large"></i></a>
+  <a href="#" class="fab43-default" data-mdb-toggle="tooltip" title="Add to Group"><i class="sir sir-icon-import-to-project icon-large"></i></a>
   
 </div></div>
                   
@@ -694,31 +794,143 @@
                          
                         </div></td>
                         <td class="maintd"><a href="#" class="btn-add-favourite"><i class="fa fa-star-o"></i></a>	<span class="product-title" data-mdb-toggle="tooltip"
-                          data-mdb-original-title="Replace the 4065 board on the power lift in year 4 classroom with the 6065 board , on the Loxit height adjustment trolley in the training room."> Replace the 4065 board on the power lift in year 4 classroom with the 6065 board , on the Loxit height adjustment trolley in the training room.</span></td>
-                        <td>Location Name</td>
+                          data-mdb-original-title="SMART GF165 65 features up to 20-poin..."> SMART GF165 65" features up to 20-poinassroom with the 6065 board , on the Loxit height adjustment trolley in the training room.</span></td>
+                        <td>£10.00</td>
                   
-                        <td><div class="table-status yes mr-2"><i class="sir sir-icon-tick"></i></div></td>
-                        <td><a href="#" class="fab43-default action-btn"><i class="sir sir-icon-menu-more icon-medium"></i></a>
-                        <div id="actions-location-23435" class="popover actions card">
-                        <div class="card-body">
-                          <ul>
-                          <li><a href="">Overview</a></li>
-          <li><a href="">Modify</a></li>
-          <li><a href="">Duplicate</a></li>
-          <li><a href="">Print</a></li>
-          <li><a href="">Delete</a></li>
-                       </ul></div></div>
+                        <td>£10.00</td>
+                        <td>£10.00</td>
+                        <td>£10.00</td>
+                        <td>£10.00</td>
+                        <td>£10.00</td>
+                        <td>
+                     <a href="#" class="fab43-default"><i class="sir sir-icon-edit"></i></a>
                         </td>
 
                       
                       </tr>
-                      <tr>
+                      <tr class="total-tr">
+                       <td></td>
+                        <td><h6>27 Products | Location total</h6></td>
+                    
+                        <td><h4>£9803.50</h4></td>
+                        <td><h4>£11252.56</h4></td>
+                        <td><h4>20%</h4></td>
+                        <td><h4>£13503.07</h4>	</td>
+                        <td><h4></h3></td>
                        
-                        <td>2</td>
+                        <td><h4>14.78	</h4></td>
+                        <td><h4></h3></td>
                       </tr>
+                      <tr class="subtotal-tr">
+                        <td></td>
+                         <td><h6>27 Products | 1 Location</h6></td>
+                     
+                         <td><h4>£9803.50</h4></td>
+                         <td><h4>£11252.56</h4></td>
+                         <td><h4>20%</h4></td>
+                         <td><h4>£13503.07</h4>	</td>
+                         <td><h4></h3></td>
+                        
+                         <td><h4>14.78	</h4></td>
+                         <td><h4></h4></td>
+                       </tr>
                     </tbody>
                   </table>
       
+
+<div class="card mt-4">
+
+<div class="card-body">
+<h5>Terms - To set and reuse terms, edit your Branding Theme in Invoice Settings</h5>
+<div class="form-outline">
+<textarea class="form-control" id="textAreaExample" rows="8">Within this page you can access the terms and conditions which relate to you, purchasing our range of products or services. We recommend you read them carefully and print a copy for your reference. We may update or modify these terms and conditions from time to time so please check this area of the website regularly: www.striveav.com/company/terms/
+
+  SITE SURVEY
+  StriveAV will undertake, where necessary, a site survey prior to fully installing the equipment. This will be to fully prepare our on-site engineers to ensure a successful installation. A StriveAV Site Surveyor will require authorised access to all relevant rooms and should be accompanied by a suitable representative of the customer (i.e. somebody who knows the required position of the boards, etc.) at all times. The customer maybe requested to complete a simple self site survey form if a StriveAV representative is unable to attend due to tight dead lines.
+  
+  ASBESTOS
+  
+  Confirmation must be received (OR Asbestos Register is present) that there is no presence of Asbestos or other harmful substances within working areas, StriveAV can produce risk assessment and method statements to confirm our safe working practices where required
+  
+  ELECTRICAL WORK
+  
+  A suitable 240v power socket is required for all electrical powered equipment.  If the socket outlets being installed on existing circuits are RCD protected, then a RCD socket will need to be installed. This will incur additional costs. Where there are no main protective conductors to the main gas or water stopcocks, additional costs may be incurred. as this is a major departure from the BS7671 wiring regulation.
+  
+  DELIVERY OF GOODS
+  
+  All equipment delivered where possible, 3 days prior to agreed installation date, will require a signature and the outer packaging should be checked before it is signed for. Any damage to outer packaging must be reported immediately and signed for as such.
+  
+  All equipment should be stored in a dry, safe place and should remain unopened, unless the product is supply only. All equipment delivered should be moved to relevant rooms or central location by others, ready for installation, prior to the engineer attending site.
+  
+  Goods, once delivered, become the responsibility of the recipient for insurance purposes
+  
+  CUSTOMER SIGN OFF
+  
+  An authorised representative of the customer must be available to sign-off the installation on the final day of completion of works. It is the customer’s responsibility to check all aspects of the installation.
+  
+  The contract for the installation of goods installed will commence on the day of completion, covering a 1 year installation of hardware, where applicable, manufacturers warranties apply to all hardware, additional cover may apply if covered in the above quotation.
+  
+  WORKING HOURS
+  
+  Our standard working hours are Monday to Friday 8:00 to 16:30. Work outside of these hours can be arranged if required, this may increase costs of installation.
+  
+  SITE ACCESS
+  
+  Access to all relevant areas will be unrestricted between 08.00 and 16.30 and there will be no restriction on power tools or noisy works.
+  
+  TRUNKING &amp; CONDUIT
+  
+  Where possible we will use as little surface mount trunking and conduit as possible, but in most cases especially “legacy” buildings there will be need for 38mm x 25mm white surface mount self-adhesive trunking which will be two factor fixed using the adhesive strips and hard wall fixings. Where specialist trunking or conduit is required please discuss this with your account manager/ site surveyor but note that additional costs may apply.
+  
+  NOTE 20mm round conduit is not of a sufficient diameter to house multiple AV Cables
+  PACKAGING
+  
+  Removal and disposal of waste materials arising from the installation is the responsibility of the customer unless otherwise agreed in writing prior to installation.
+  
+  StriveAV Installation engineers will, where possible, endeavour to return all rooms back to their original state prior to installation.
+  PAYMENT
+  
+  Where the net order value is over £10k or the installation will take more than 1 day to complete then an invoice will be raised for the goods, once StriveAV has obtained a proof of delivery to the client, or pre-arranged destination.
+  
+  A further invoice will be raised on completion of the installations and once the customer has signed the work off.
+  
+  All invoices are due for payment within 30 days of date of issue.
+  
+  All products remain the property of StriveAV Limited until paid for in full.
+  
+  CANCELLATION/DELAYED WORKS
+  
+  Where a customer needs to cancel/delay an installation this must be advised to StriveAV in writing and an acknowledgment received back from StriveAV Ltd. Where the installation is scheduled within the next 7 days then a cancellation/delay charge may apply.</textarea>
+</div>
+
+<div class="total ml-auto w-50 mt-4">
+
+<div class="d-flex justify-content-between pb-2"><h3>SubTotal</h3>
+ <h3>£11252.56</h3>
+  </div>
+  <div class="d-flex justify-content-between border-bottom pb-2"><h3>Total VAT 20%</h3>
+    <h3>£2250.51</h3>
+    
+   
+     
+    </div>
+
+     <div class="d-flex justify-content-between"><h3>Total</h3>
+      <h3>£13503.07</h3>
+      
+     
+       
+      </div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
                 </div>
               </div>
               </div>
