@@ -92,6 +92,9 @@ $('body').on('click', function(e) {
   }
 });
 
+$('#proposal-product-1').click(function() {
+  $("#individual-actions-proposal").toggleClass("open");
+});
 
 
 
