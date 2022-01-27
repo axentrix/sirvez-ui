@@ -29,4 +29,18 @@
 .siz-icon-module:before{content:'\0044';}
 .siz-icon-check:before{content:'\0045';}
 .siz-icon-tag-remove:before{content:'\0046';}
-.siz-iconcrown:before{content:'\0047';}
+.siz-icon-crown:before{content:'\0047';}
+.siz-icon-flag:before{content:'\0048';}
+
+.siz-icon-add-task-workflow:before{content:'\0049';}
+
+.siz-icon-arrow-up:before{content:'\004a'; transform:rotate(90deg);}
+.siz-icon-location-survey:before{content:'\004b';}
+.siz-icon-confirm:before{content:'\004c';}
+.siz-icon-stop:before{content:'\004d';}
+.siz-icon-child-customer:before{content:'\004e';}
+.siz-icon-scan:before{content:'\004f';}
+.siz-icon-signin1:before{content:'\0050';}
+.siz-icon-scan:before{content:'\0055';}
+.siz-icon-floor:before{content:'\0051';}
+.siz-icon-reorder:before{content:'\0052';}
