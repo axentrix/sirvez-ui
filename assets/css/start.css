@@ -2,6 +2,7 @@
 /*Other Colors*/
 /*Activity Colours*/
 /*Locations*/
+/*Helpdesk colors */
 .pl-0 {
   padding-left: 0;
 }
@@ -519,6 +520,7 @@ a:focus {
   overflow-x: hidden;
   margin-left: 0px;
   transition: margin-left 0.2s;
+  position: relative;
   /* sticky bottom */
   margin-bottom: -160px;
   padding-bottom: 160px;
@@ -701,6 +703,15 @@ a:focus {
   position: absolute;
   top: 23px;
   right: -10px;
+  min-width: unset;
+}
+.avatar-with-badge .circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: -2px;
   min-width: unset;
 }
 .avatar {
@@ -910,6 +921,10 @@ i.icon-medium {
   background: #c51c1c;
   color: #ffffff;
 }
+.criticalbg.half-opacity {
+  color: #05396b;
+  background: #f5b8b8;
+}
 .text-critical {
   color: #c51c1c;
 }
@@ -926,6 +941,10 @@ i.icon-medium {
   background: #ab3a7a;
   color: #ffffff;
 }
+.highbg.half-opacity {
+  color: #05396b;
+  background: #ebc6db;
+}
 .bluebg {
   background: #1ab4d7;
 }
@@ -939,9 +958,17 @@ i.icon-medium {
   background: #ffa927;
   color: #ffffff;
 }
+.mediumbg.half-opacity {
+  color: #05396b;
+  background: #fffaf3;
+}
 .normalbg {
   background: #5cdb94;
   color: #ffffff;
+}
+.normalbg.half-opacity {
+  color: #05396b;
+  background: #ffffff;
 }
 .secondarybg {
   background: #389583;
@@ -1302,7 +1329,7 @@ h5 + h3 {
   flex-direction: column;
 }
 .bs-stepper-circle {
-  border: solid 4px #ffffff;
+  border: solid 2px #ffffff;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   background-color: #d9dce2;
 }
@@ -1362,13 +1389,19 @@ h5 + h3 {
 .notification.secondarybg {
   background: #389583;
 }
+[class*='col-'] {
+  position: relative;
+}
 [class*='col-'] .mui-panel {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 .list-info {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 14px;
 }
 .list-info.icons-frame {
   font-size: 14px;
@@ -1851,6 +1884,30 @@ tr.medium:after {
   background: #ffa927;
 }
 tr.normal:after {
+  background: #5cdb94;
+}
+.helpdesk-tasks li {
+  position: relative;
+}
+.helpdesk-tasks li:after {
+  content: "";
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0px 0px 4px;
+}
+.helpdesk-tasks li.critical:after {
+  background: #c51c1c;
+}
+.helpdesk-tasks li.high:after {
+  background: #ab3a7a;
+}
+.helpdesk-tasks li.medium:after {
+  background: #ffa927;
+}
+.helpdesk-tasks li.normal:after {
   background: #5cdb94;
 }
 .bs-stepper-label .date {
@@ -2647,4 +2704,95 @@ h6 {
 .border-bottom {
   padding-bottom: 1em;
   border-bottom: solid 1px #d9dce2;
+}
+.mui-panel-border {
+  border: solid 1px #d9dce2;
+  box-shadow: none;
+}
+.mui-panel-grey {
+  border: solid 1px #d9dce2;
+  background: #f9fbff;
+  box-shadow: none;
+}
+.row {
+  --bs-gutter-x: 0.5rem;
+  --mdb-gutter-x: 0.5rem;
+}
+.mui-panel-service {
+  background: #fbfdff;
+}
+.text-white + .search input {
+  border: none;
+}
+.helpdesk-tasks {
+  margin: 0;
+  padding: 0;
+}
+.helpdesk-tasks > li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 40px 0.5fr;
+  padding-bottom: unset;
+  align-items: center;
+  column-gap: 5px;
+  border-radius: 8px;
+}
+.helpdesk-tasks > li.add-new {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.18), 0 0 2px 0 rgba(0, 0, 0, 0.18);
+  background: #ffffff;
+}
+.helpdesk-tasks > li.add-new .form-outline {
+  flex: 1;
+}
+.helpdesk-tasks > li .bar-icon {
+  padding: 10px;
+  color: #889caf;
+}
+.helpdesk-tasks > li .bar-icon:hover {
+  cursor: grab;
+}
+.helpdesk-tasks > li .task-number {
+  flex-basis: 43px;
+}
+.helpdesk-tasks > li .task-number.inactive {
+  opacity: 0.4;
+}
+.helpdesk-tasks > li div {
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+.helpdesk-tasks > li .board {
+  max-width: 22%;
+  padding: 5px;
+  align-items: flex-start;
+}
+.helpdesk-tasks > li .board a {
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  left: 0;
+  font-size: 15px;
+  display: block;
+}
+.cat-text {
+  color: #05396b;
+}
+.avatar-small {
+  width: 33px;
+  height: 33px;
+}
+.pending {
+  background: #cfc9ef;
+}
+.inprogress {
+  background: #c9dcef;
+}
+.new {
+  background: #edf5e0;
+}
+.done td {
+  background: #b8f8d1 !important;
 }

@@ -104,7 +104,7 @@ body {
    overflow-x: hidden;
    margin-left: 0px;
    transition: margin-left 0.2s;
- 
+ position:relative;
    /* sticky bottom */
    margin-bottom: -160px;
    padding-bottom: 160px;
@@ -335,6 +335,17 @@ i{ padding-right:1.6em;
       top:23px;
       right:-10px;
       min-width:unset;
+    }
+
+    .circle{
+width:14px;
+height:14px;
+      border-radius:50%;
+      position:absolute;
+      top:0px;
+      right:-2px;
+      min-width:unset;
+
     }
   }
   .avatar{
@@ -588,12 +599,18 @@ background:#644D75;
 .criticalbg{
   background:@critical;
   color:@white;
+
+&.half-opacity{color:@thirdiarycolor;
+ background: lighten(@critical, 40%);
+}
+
 }
 .text-critical{
   color:@critical;
 }
 .text-high{
   color:@high;
+  
 }
 .text-normal{
   color:@normal;
@@ -604,6 +621,9 @@ background:#644D75;
 .highbg{
   background:@high;
   color:@white;
+  &.half-opacity{color:@thirdiarycolor;
+    background: lighten(@high, 40%);
+   }
 }
 
 
@@ -624,12 +644,18 @@ background:#644D75;
 .mediumbg{
   background:@medium;
   color:@white;
+  &.half-opacity{color:@thirdiarycolor;
+    background: lighten(@medium, 40%);
+   }
 }
 
 
 .normalbg{
   background:@normal;
   color:@white;
+  &.half-opacity{color:@thirdiarycolor;
+    background: lighten(@normal, 40%);
+   }
 }
 
 .secondarybg{
@@ -1091,7 +1117,7 @@ height:100%;
 }
 
 .bs-stepper-circle{
-border:solid 4px @white;
+border:solid 2px @white;
 box-shadow: 2px 2px 6px rgba(0,0,0,.1);
   background-color:@bordercolor;
 
@@ -1172,9 +1198,11 @@ height:1px;
 }
 
 [class*='col-']{
-
-  .mui-panel{
-   height:100%;
+ 
+  position:relative;
+  .mui-panel{height:100%;
+    margin:0;
+  padding:0;
   }
 }
 
@@ -1183,7 +1211,7 @@ height:1px;
   margin:0;
   padding:0;
   list-style:none;
-
+  font-size:14px;
 &.icons-frame{
 font-size:14px;
   display:grid;
@@ -1856,6 +1884,56 @@ background:@critical;
   }
 
 
+  .helpdesk-tasks{
+  li{
+    position:relative;
+    &:after{
+    
+      content:"";
+      width:6px;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      border-radius:4px 0px 0px 4px;
+      
+    
+    }
+    
+        &.critical{
+          &:after{
+    
+    background:@critical;
+    
+          }
+    
+    
+        }
+    
+        &.high{
+          &:after{
+    
+            background:@high;
+            
+                  }
+        }
+        &.medium{
+          &:after{
+    
+            background:@medium;
+            
+                  }
+        }
+        &.normal{
+          &:after{
+    
+            background:@normal;
+            
+                  }
+        }
+       
+      }
+    }
 .bs-stepper-label{
 
   .date{
@@ -2853,3 +2931,129 @@ align-items:center;
           padding-bottom:1em;
           border-bottom:solid 1px @bordercolor;
          }
+
+
+
+         .mui-panel-border{
+           border:solid 1px @bordercolor;
+           box-shadow:none;
+
+         }
+
+         
+         .mui-panel-grey{
+          border:solid 1px @bordercolor;
+          background:@lightgreybg;
+          box-shadow:none;
+        }
+
+        .row{
+          --bs-gutter-x: 0.5rem;
+          --mdb-gutter-x: 0.5rem;
+        }
+
+
+        .mui-panel-service{
+          background:@helpdeskbg
+        }
+
+        .text-white+.search input{
+          border:none;
+        }
+
+
+
+        .helpdesk-tasks{
+          margin:0;
+          padding:0;
+               >li{
+                 margin-bottom:10px;
+                 padding-left:10px;
+                 display:grid;
+                 grid-template-columns: 2fr 1fr 40px 1/2fr;
+                 padding-bottom:unset;
+   align-items:center;
+          column-gap: 5px;
+               
+
+                 &.add-new{
+                  box-shadow: 0 2px 2px 0 rgba(0,0,0,18%), 0 0 2px 0 rgba(0,0,0,18%);
+                  background:@white;
+          
+                  .form-outline{
+          
+                    flex:1;
+                  }
+                 }
+                  border-radius:8px;
+                  .bar-icon{
+                    padding:10px;
+                    color:@bodysubtext;
+                   &:hover{ cursor:grab;}
+                  }
+          .task-number{
+            flex-basis:43px;
+          
+            &.inactive{
+              opacity:0.4;
+            }
+          }
+                  div{
+                    display:inline-flex;
+                    flex:0 0 auto;
+                  }
+          
+          
+                  .board{
+                    max-width:22%;
+                    padding:5px;
+                    align-items:flex-start;
+          
+          
+                    a{
+                      color:@white;
+                      white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width:250px;
+            left:0;
+            font-size:15px;
+           display:block;
+                    }
+                  }
+                }
+              }
+
+
+              .cat-text{
+
+                color:@thirdiarycolor;
+              }
+
+
+              .avatar-small{
+
+                width:33px;
+                height:33px;
+              }
+
+
+              .pending{
+
+                background:@pending;
+              }
+              .inprogress{
+
+                background:@inprogress;
+              }
+              .new{
+
+                background:@new;
+              }
+
+              .done{
+td{
+                background:@highlightdone !important;
+              }
+
+            }

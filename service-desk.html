@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+    <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+  rel="stylesheet"
+/>
+
+
+
+    <link href="assets/css/start.css" rel="stylesheet" />
+    <link href="assets/css/iconfonts/sirvez-icons.css" rel="stylesheet" />
+    <link href="assets/css/iconfonts/sirvez-icons-2.css" rel="stylesheet" />
+
+
+   
+  </head>
+  <body class="app-body">
+    <div id="mainlayout"  class="app-layout">
+      <div id="bottommenu" class="mui--no-user-select">
+        <div class="bottommenu-inner">
+  
+            <ul>
+              <li  ><a href="index-app.html"><i class="sir sir-icon-projects"></i>Projects</a></li>
+              <li><a href="#"><i class="sir sir-icon-calendar"></i>Calendar</a></li>
+              <li><a href="scan.html"><img src="assets/images/scan.svg" class="mt-1 mb-2" width="28">Scan</a></li>
+              <li><a href="companies.html"><i class="sir sir-icon-company"></i>Companies</a></li>
+              <li class="selected"><a href="service-desk.html"><i class="sir sir-icon-service-desk"></i>Service Desk</a></li>
+            </ul>
+        
+      </div>
+    </div>
+    <header id="header" class="app-header">
+      <div class="mui-appbar mui--appbar-line-height">
+     
+        
+<div class="appbar-left"> <ul>
+  <li class="mui-dropdown"><a href="#" data-mui-toggle="dropdown" class="d-flex"><div class="avatar mt-1mb-1 ml-2"><img src="assets/images/avatars/avatar1.png"></div>
+      </a><ul class="mui-dropdown__menu "><a href="#" data-mui-toggle="dropdown" class="d-flex">
+                  </a><li><a href="#" data-mui-toggle="dropdown" class="d-flex"></a><a href="#">My Profile</a></li>
+                  <li><a href="#">Logout</a></li>
+              
+                </ul>
+                </li></ul> </div>
+              
+              
+                <div class="d-flex mui--text-right appbar-right">
+                  <ul class="mui-list--inline mui--text-body2" id="topmenu">
+                    <li><a href="#"><i class="sir sir-icon-settings"></i></a></li>
+                    <li><a href="#"><i class="sir sir-icon-notification"></i></a></li>
+                   
+                  </ul>
+                </div>
+            
+        
+
+
+
+
+       
+      </div>
+    </header>
+      <div id="content-wrapper">
+       
+        
+
+        <div class="container" id="main">
+          <div class="w-100 d-flex">
+        
+<div class="main-content mt-2">
+
+   <div class="d-flex w-100 justify-content-between align-items-center"><h3 class="text-white">Service Desk</h3>
+        
+        <div class="search input-group-lg mr-6 ml-6">
+          
+          <input type="text" class="form-control" aria-label="Search" aria-describedby="inputGroup-sizing-lg"><span><i class="sir sir-icon-search"></i></span>
+        </div>
+        
+        <div class="ml-auto d-flex align-items-center"><a href="#" class="fab43"><i class="sir sir-icon-plus icon-small "></i></a></div>
+    
+    
+       
+    
+    
+    </div>
+
+    <div class="mui-panel mui-panel-service d-flex mt-4">
+        <div class="filter d-column align-items-center justify-content-start">
+            <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex p-2 w-50 align-items-center">
+          <select class="form-select mr-2">
+            <option>Queues</option>
+            <option>1</option>
+            <option>2</option>
+           
+          
+          </select></div>
+         
+
+
+          <div class="ml-auto w-50  d-flex">
+
+            <select class="form-select mr-2">
+                <option>Status</option>
+                <option>1</option>
+                <option>2</option>
+               
+              
+              </select>
+          
+              <a href="#" class="fab43-default mr-2"><i class="sir sir-icon-calendar icon-small "></i></a>
+            
+          </div></div>
+          <div class="d-flex justify-content-center align-items-center w-100 mb-2">
+            <a href="#" class="filter-pill"><span class="circle criticalbg"></span>Critical</a>
+            <a href="#" class="filter-pill"><span class="circle highbg"></span>High</a>
+            <a href="#" class="filter-pill"><span class="circle mediumbg"></span>Medium</a>
+            <a href="#" class="filter-pill"><span class="circle normalbg"></span>Normal</a>
+            
+          </div>
+        </div>
+    <div class="mui-panel-content">
+        <ul class="helpdesk-tasks">
+
+<li class="high border-bottom">
+    
+   <div class="d-flex align-items-center">
+    <div class="avatar-with-badge mr-2"><div class="avatar"><img src="assets/images/avatars/avatar5.png"></div><div class="circle highbg"></div></div>
+<div class="activity-text d-column"><a href="#" class="product-title">Broken Mouse Test</a>
+<div class="d-flex align-items-center"><span class="cat-text mr-2">Open Incidents</span>
+
+    <span class="cat-text d-flex mr-2"><i class="sir sir-icon-helpdesk icon-large mr-2"></i>Assigned to: </span><div class="avatar avatar-small"><img src="assets/images/avatars/avatar1.png"></div>
+
+</div>
+</div>
+
+</div> 
+<div><span class="badge new uppercase">New</span></div>
+
+<div><div class="badge-circle highbg half-opacity" data-mdb-toggle="tooltip" title="" data-mdb-original-title="Received via form"><i class="sir sir-icon-ticket-form"></i></div>
+</div><div><span class="cat-text">23 January</span></div></li>
+
+<li class="critical border-bottom">
+    
+    <div class="d-flex align-items-center">
+     <div class="avatar-with-badge mr-2"><div class="avatar"><img src="assets/images/avatars/avatar1.png"></div><div class="circle criticalbg"></div></div>
+ <div class="activity-text d-column"><a href="#" class="product-title">Broken Mouse Test</a>
+ <div class="d-flex align-items-center"><span class="cat-text mr-2">Returns</span>
+ 
+     <span class="cat-text d-flex mr-2"><i class="sir sir-icon-helpdesk icon-large mr-2"></i>Assigned to: </span><div class="avatar avatar-small"><img src="assets/images/avatars/avatar1.png"></div>
+ 
+ </div>
+ </div>
+ 
+ </div> 
+ <div><span class="badge inprogress uppercase">In progress</span></div>
+
+ <div><div class="badge-circle criticalbg half-opacity" data-mdb-toggle="tooltip" title="" data-mdb-original-title="Received via email"><i class="sir sir-icon-send-mail"></i></div>
+ </div> <div><span >23 January</span></div></li>
+
+
+
+
+
+
+ <li class="medium border-bottom">
+    
+    <div class="d-flex align-items-center">
+     <div class="avatar-with-badge mr-2"><div class="avatar"><img src="assets/images/avatars/avatar6.png"></div><div class="circle mediumbg"></div></div>
+ <div class="activity-text d-column"><a href="#" class="product-title">Broken Mouse Test</a>
+ <div class="d-flex align-items-center"><span class="cat-text mr-2">Returns</span>
+ 
+     <span class="date d-flex mr-2"><i class="sir sir-icon-helpdesk icon-large mr-2"></i>Assigned to: Unassigned</span>
+ 
+ </div>
+ </div>
+ 
+ </div> 
+ <div><span class="badge pending uppercase">Pending</span></div>
+
+ <div><div class="badge-circle mediumbg half-opacity" data-mdb-toggle="tooltip" title="" data-mdb-original-title="Received via Call Centre"><i class="sir sir-icon-ticket-callcentre"></i></div>
+ </div> <div><span >23 January</span></div></li>
+
+        </ul>
+    
+    
+    </div>
+    
+    
+    
+    
+    </div>
+
+  
+
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+      </div>
+      <footer id="footer" style="display:none;">
+        <div class="mui-container-fluid">
+       
+        </div>
+      </footer>
+
+     
+    </div>
+   
+
+<!-- <script src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
+<script src="//cdn.muicss.com/mui-0.10.3/react/mui-react.js"></script>-->
+<script src="https://cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- MDB core JavaScript -->
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+
+
+<script>
+$(document).ready(function () {
+  var stepper = new Stepper(document.querySelector('.bs-stepper'));
+
+ 
+});
+
+
+</script>
+  </body>
+</html>
