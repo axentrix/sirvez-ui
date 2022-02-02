@@ -293,9 +293,15 @@
               
               
               </div>
-            <div class="col-md-12"><div class="mui-panel mt-2"><div class="mui-panel-header d-flex align-items-center justify-content-between"><h5>Locations</h5>
+            <div class="col-md-12"><div class="mui-panel mt-2"><div class="mui-panel-header d-flex align-items-center justify-content-between">
+              
+              <div>
+              <h5>Locations</h5>
         
-                <span class="badge badge-white">#970</span>
+                <span class="badge badge-white">#970</span></div>
+
+                <a href="#" class="fab43" style="position:absolute; top:35px; right:10px;" data-mdb-toggle="modal" data-mdb-target="#new-location"><i class="sir sir-icon-plus icon-small "></i></a>
+                
                 </div>
                 <div class="mui-panel-content">
                 <div class="row">
@@ -303,7 +309,7 @@
 <div class="col-md-3"><ul class="mui-tabs__bar mui-tabs__bar--justified custom-tabs vertical-tabs" >
 <li><a data-mui-toggle="tab" href="#" data-mui-controls="location-1">Floor 1</a></li>
 <li><a href="#" data-mui-toggle="tab" data-mui-controls="location-2">Floor 2</a></li>
-
+<li class="add-new"><a href="#" data-mui-toggle="tab" data-mui-controls="add-new-loc">Add new...</a></li>
 
 </ul></div>
 <div class="col-md-9">
@@ -335,17 +341,24 @@
 </div>
 <div class="mui-tabs__pane mt-2" id="location-2">
 
-  <ul class="list-info">
-    <li><span class="d-flex"><i class="sir sir-icon-product mr-2"></i>12 Products</span></li>
-    <li><span class="d-flex"><i class="sir sir-icon-projects mr-2"></i>1 Live Project</span></li>
-    <li><span class="d-flex"><i class="siz siz-icon-flag mr-2"></i>5 Archieved Projects</span></li>
-    <li><span class="d-flex"><i class="sir sir-icon-date mr-2"></i>Survey Date</span></li>
-    <li><span class="d-flex"><i class="sir sir-icon-ticket mr-2"></i>6 Open Tickets</span></li>
-       </ul>
+ 
 
 
 </div>
+<div class="mui-tabs__pane mt-2" id="add-new-loc">
+  <div class="mui-panel-content">
+<h3 class="mb-4">Add New Floor</h3>
+ <form>
+  <div class="form-outline">
+  <input type="text" class="form-control" id="floor-name" />
+<label class="form-label" for="floor-name">Name</label>
+</div>
 
+<button class="mui-btn mui-btn--primary mt-2 ml-auto">Save </button>
+ </form>
+</div>
+
+</div>
 </div>
 
                 </div>
@@ -354,7 +367,51 @@
               
                 </div></div></div>
 </div>  
+<div class="mui-tabs__pane mt-2" id="pane-products">
 
+
+  <table class="mui-table custom-table app-table table-light">
+      <thead>
+        <tr><th></th>
+          <th>Product Name </th>
+          <th>Location</th>
+          <th>In Stock</th>
+          <th>SN</th>
+          <th>Labels</th>
+       
+         
+         <th><a href="#" class="fab43" data-mdb-toggle="tooltip" title="" data-mdb-original-title="Filter Products" aria-label="Filter Products"><i class="sir sir-icon-filter icon-small"></i></a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> 
+<figure><img src="assets/images/Image 32.jpg"> </figure>
+
+
+          </td>
+          <td>	<a href="product-details-app.html" class="product-title" data-mdb-toggle="tooltip" data-mdb-original-title="SMART GF165 65 features up to 20-poin..."> SMART GF165 65" features up to 20-poinassroom with the 6065 board , on the Loxit height adjustment trolley in the training room.</a></td>
+         
+          <td>Location Name	</td>
+         
+          <td><div class="table-status yes"><i class="sir sir-icon-tick"></i></div> </td>
+    
+          <td><div class="table-status no">-</div> </td>
+         
+        
+          <td> </td>
+          <td>
+              <a href="#" class="fab43-default" data-popover-content="#actions-location-23435" data-toggle="popover" data-placement="right"><i class="sir sir-icon-menu-more icon-medium"></i></a>
+          </td>
+
+        
+        </tr>
+        
+      </tbody>
+    </table>
+
+
+</div> 
   <div class="mui-tabs__pane" id="pane-deliveries">
     <div class="mui-panel-bottom">
       <div class="mui-panel-content">
@@ -578,6 +635,42 @@
 </form>
 
         </div></div></div>
+
+
+        <div class="modal  fade" id="new-location" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog mui-panel">
+            <div class="modal-content mui-panel-content p-4">
+    
+              <div class="d-flex justify-content-between">
+    
+                <div>
+              
+    <h3 class="mb-4">Add New Location</h3>
+    
+    </div>
+  
+    </div>
+
+
+    
+        
+           <form>
+            <div class="form-outline">
+            <input type="text" class="form-control" id="location-name" />
+          <label class="form-label" for="floor-name">Name</label>
+          </div>
+          <div class="form-outline-select mt-3">
+            <select class="form-select mr-2">
+              <option>Select Floor</option>
+              <option>1</option>
+              <option>2</option>
+             
+            
+            </select></div>
+          <button class="mui-btn mui-btn--primary mt-2 ml-auto">Save </button>
+           </form>
+        
+        </div>  </div>  </div>
 
 <!-- <script src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 

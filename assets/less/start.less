@@ -1785,6 +1785,15 @@ font-family:"Sirvez Regular";
 }
 }
 
+.form-switch .form-check-input[type=checkbox]
+ {
+  flex: unset !important;
+ 
+}
+.form-switch .form-check-input:checked[type=checkbox]:after{
+
+  background-color:@secondary;
+}
 legend{
   font-family:"Sirvez Bold";
   font-size:14px;
@@ -2577,8 +2586,41 @@ li{
     }
   }
 }
+.upload{
 
+  label.file{border-radius:6px;
+    padding:0.2em;
+  }
+figure{width:83px;
+  height:83px;
+  border-radius:8px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
 
+  break-inside: avoid;
+overflow:hidden;
+transition:all 0.3s;
+cursor:pointer;
+&:hover{
+
+opacity:0.8;
+}
+  img{
+    grid-row: 1 / -1;
+grid-column: 1;
+  }
+&.add-new-img {
+background:@primary;
+
+i{
+color:@white;
+
+}
+
+}
+}
+}
 .table-light{
 
 
@@ -2806,6 +2848,73 @@ align-items:center;
       text-align:left !important;
     }
 
+#task-type.toggler{
+
+  > div {
+    width:calc(25%);
+  }
+
+  label{
+
+    padding:unset;
+  }
+  label div {
+    z-index: 5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+    width: 100%;
+  }
+}
+
+.add-new{
+ 
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:solid 1px @bordercolor !important;
+}
+.vertical-tabs li{
+transition:all 0.3s ease;
+  &.add-new{color:@secondary !important;
+    margin-top:10px;
+    display:flex;
+  align-items:center;
+  justify-content:center;
+  border:dashed 2px @bordercolor !important;
+    box-shadow:none;
+    background:transparent;
+height:43px;
+
+    a{
+      color:@secondary !important;
+    }
+
+    &:hover{
+      background:@highlightdone;
+    }
+  }
+}
+
+#datepicker{
+position:relative;
+  &:after{
+    content:'\0032';
+z-index:9999;
+    position:absolute;
+    right:5px;
+    top:5px;
+   
+    display:block;
+    width:24px;
+    height:24px;
+    font-weight:bold;
+    font-family:"sirvez";
+
+  }
+}
+
 
    .toggler {
       width:100%;
@@ -2819,6 +2928,9 @@ align-items:center;
       justify-content: space-between;
       align-items:center;
     height:50px;
+
+
+
     > div {
       color:white;
     
@@ -3057,3 +3169,7 @@ td{
               }
 
             }
+
+
+
+          

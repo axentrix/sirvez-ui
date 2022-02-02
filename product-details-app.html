@@ -1,4 +1,4 @@
-<html lang="en-us"><head><style type="text/css">.mui-textfield.mui-textfield--float-label > label {-webkit-transition:all .15s ease-out;-moz-transition:all .15s ease-out;-o-transition:all .15s ease-out;transition:all .15s ease-out;}</style><style type="text/css">@keyframes mui-btn-inserted{from{transform:none;}to{transform:none;}}.mui-btn{animation-duration:0.0001s;animation-name:mui-btn-inserted;}@keyframes mui-dropdown-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-dropdown-inserted;}@keyframes mui-btn-inserted,mui-dropdown-inserted{from{transform:none;}to{transform:none;}}.mui-btn[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-btn-inserted,mui-dropdown-inserted;}@keyframes mui-tab-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="tab"]{animation-duration:0.0001s;animation-name:mui-tab-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > input{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > textarea{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-select-inserted{from{transform:none;}to{transform:none;}}.mui-select > select{animation-duration:0.0001s;animation-name:mui-select-inserted;}@keyframes mui-node-inserted{from{transform:none;}to{transform:none;}}.mui-select > select ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-inserted;}@keyframes mui-node-disabled{from{transform:none;}to{transform:none;}}.mui-select > select:disabled ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-disabled;}</style>
+<html lang="en-us"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
 <!-- MDB -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet">
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
 
 
     <link href="assets/css/start.css" rel="stylesheet">
@@ -154,7 +154,7 @@
 
 
 
-    <a href="#" class="mui-btn mui-btn--primary w-100">
+    <a href="#" class="mui-btn mui-btn--primary w-100" data-mdb-toggle="modal" data-mdb-target="#testing-form">
       <i class="siz siz-icon-location-survey icon-medium"></i>View Testing Form</a></div>
 
 
@@ -252,7 +252,128 @@
 
      
     </div>
+    <div class="modal  fade" id="testing-form" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg mui-panel">
+        <div class="modal-content mui-panel-content p-4">
+
+          <div class="d-flex justify-content-between">
+
+            <div>
+          <h5>Testing Form</h5>
+<h3 >Projector</h3>
+<span class="date">#54543</span>
+</div>
+<div class="d-flex">
+  <a href="#" class="mui-btn" ><i class="sir sir-icon-tick text-normal mr-2"></i>Mark as Complete</a>
+
+  <button class="mui-btn mui-btn--primary">Save</i></button>
+</div>
+</div>
+<form>
+  <h4 class="mb-2 mt-4">Physical Installation</h4>
+  <div class="form-outline-select mt-3">
+    <select class="form-select mr-2">
+      <option>Mounted Correctly</option>
+      <option>1</option>
+      <option>2</option>
+     
+    
+    </select></div>
+<h4 class="mb-2 mt-4">Image Quality</h4>
+<div class="form-outline-select mt-3">
+  <select class="form-select mr-2">
+    <option>Image displayed and in good resolution</option>
+    <option>1</option>
+    <option>2</option>
    
+  
+  </select></div>
+  <div class="d-flex upload my-3">
+
+
+
+ <form method="post" action="/upload">
+  
+  <label class="file d-flex align-items-center mr-2"> <figure class="add-new-img mr-2">
+    <i class="sir sir-icon-camera icon-large"></i>
+   </figure> Upload Image...
+      <input type="file" multiple>
+      <!-- use multiple, even if it’s not allowed, to be able to show an info text -->
+  </label>
+  
+  <label class="file d-flex  align-items-center"> <figure class="add-new-img mr-2">
+    <i class="siz siz-icon-video icon-large"></i>
+   </figure> Upload Video...
+      <input type="file" multiple>
+      <!-- use multiple, even if it’s not allowed, to be able to show an info text -->
+  </label>
+
+
+
+
+
+  </div>
+
+
+
+
+  <h4 class="mb-2 mt-4">Create Task</h4>
+  <div class="form-outline-switch d-flex">
+    <div class="form-check form-switch">
+     <input class="form-check-input" type="checkbox" role="switch" id="create-task" autocompleted="">
+     <label class="form-check-label" for="create-task">Create task from this test?</label>   
+    </div>
+  </div>
+<div class="mui-panel-grey p-42">
+<div class="mui-panel-content">
+<div class="d-flex align-items-center my-2"><div class="avatar mr-2"><img src="assets/images/avatars/avatar1.png"></div><h4>Projector #14 Test Form Task</h4></div>
+
+
+  <div class="form-outline d-flex">
+
+ 
+
+
+<div class="toggler w-100  my-2" id="task-type">
+  <div></div>
+<label class="selected">
+<input type="radio" name="tasktype" data-location="0" value="Critical">
+<div><span class="circle criticalbg mr-2"></span>Critical</div>
+</label>
+<label>
+<input type="radio" name="tasktype" data-location="calc(100%)" value="High">
+<div><span class="circle highbg mr-2"></span>High</div>
+</label>
+<label>
+  <input type="radio" name="tasktype" data-location="calc(200%)" value="Medium">
+  <div><span class="circle mediumbg mr-2"></span>Medium</div>
+  </label>
+  <label>
+    <input type="radio" name="tasktype" data-location="calc(300%)" value="Normal">
+    <div><span class="circle normalbg mr-2"></span>Normal</div>
+    </label>
+</div>
+</div>  
+
+<div class="form-outline my-2">
+  <textarea class="form-control" id="textAreaExample" rows="2" style="border:solid 1px #ced4da"></textarea>
+  <label class="form-label" for="textAreaExample">Notes</label>
+</div>
+
+
+<div id="datepicker">
+  
+
+  <input type="text" class="form-control datepicker" placeholder="Select Date"/>
+
+</div>
+
+</div>
+</div>
+
+</form>
+
+        </div></div></div>
 
 <!-- <script src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
@@ -268,12 +389,30 @@
 <!-- MDB core JavaScript -->
 <!-- MDB -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
 
 
 
-<script src="assets/js/scripts.js"></script>
 
-
+<script>
+  $(document).ready(function () {
+  
+    $('.datepicker').datepicker({
+      format: 'mm-dd-yyyy'
+    });
+   $('.toggler input').click(function(event){
+      $('.toggler > div').css('transform', 'translateX('+$(this).data('location')+')');
+  
+      console.log($(this).data('location'));
+      $(this).parent().siblings().removeClass('selected');
+      $(this).parent().addClass('selected');
+    });
+   
+  
+  });
+  
+  
+  </script>
 
 </body></html>

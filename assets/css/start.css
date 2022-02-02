@@ -1828,6 +1828,12 @@ input[type=file] {
 .form-check .form-check-input[type=checkbox] {
   flex: 0 0 18px;
 }
+.form-switch .form-check-input[type=checkbox] {
+  flex: unset !important;
+}
+.form-switch .form-check-input:checked[type=checkbox]:after {
+  background-color: #389583;
+}
 legend {
   font-family: "Sirvez Bold";
   font-size: 14px;
@@ -2443,6 +2449,35 @@ svg {
 .appbar-left > ul .avatar img {
   position: absolute;
 }
+.upload label.file {
+  border-radius: 6px;
+  padding: 0.2em;
+}
+.upload figure {
+  width: 83px;
+  height: 83px;
+  border-radius: 8px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  break-inside: avoid;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.upload figure:hover {
+  opacity: 0.8;
+}
+.upload figure img {
+  grid-row: -1;
+  grid-column: 1;
+}
+.upload figure.add-new-img {
+  background: #5cdb94;
+}
+.upload figure.add-new-img i {
+  color: #ffffff;
+}
 .table-light thead th {
   color: #889caf;
   text-transform: none;
@@ -2603,6 +2638,61 @@ div.users > div {
 }
 .text-left {
   text-align: left !important;
+}
+#task-type.toggler > div {
+  width: calc(25%);
+}
+#task-type.toggler label {
+  padding: unset;
+}
+#task-type.toggler label div {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.add-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #d9dce2 !important;
+}
+.vertical-tabs li {
+  transition: all 0.3s ease;
+}
+.vertical-tabs li.add-new {
+  color: #389583 !important;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: dashed 2px #d9dce2 !important;
+  box-shadow: none;
+  background: transparent;
+  height: 43px;
+}
+.vertical-tabs li.add-new a {
+  color: #389583 !important;
+}
+.vertical-tabs li.add-new:hover {
+  background: #b8f8d1;
+}
+#datepicker {
+  position: relative;
+}
+#datepicker:after {
+  content: '\0032';
+  z-index: 9999;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-weight: bold;
+  font-family: "sirvez";
 }
 .toggler {
   width: 100%;
