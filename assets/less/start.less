@@ -317,7 +317,7 @@ i{ padding-right:1.6em;
     background:@sidebarbg;
   }
 .date{
-
+font-size:14px;
   color:@bodysubtext;
 }
 
@@ -376,17 +376,46 @@ height:14px;
     
 margin-bottom:0;
 
-   
+   .dropdown{
+
+    a{
+    
+    display:inline-flex;
+    padding:10px;
+    &.show{
+
+      background:@highlightbg;
+      border-radius:50%;
+    }
+   }
+  }
 
       li{
-        margin-left:0.8em;
-        margin-right:0.7em;
+      /*  margin-left:0.8em;
+        margin-right:0.7em;*/
       }
     
     i{
   
       font-size:24px;
       color:@thirdiarycolor;
+    }
+
+
+    .activity{
+padding:10px;
+border-bottom:solid 1px @bordercolor;
+
+
+&:hover{
+
+  background:@highlightinprogress;
+}
+      i{
+        font-size:14px;
+        color:@white;
+
+      }
     }
   }
 
@@ -694,6 +723,12 @@ background:@taskbg;
   background:@locationbg;
 }
 
+
+.userbg{
+
+  color:@white;
+  background:@lightgreen;
+}
 .checkinbg{
 
   color:@white;
@@ -1104,6 +1139,12 @@ height:100%;
 
     background:@secondary;
   }
+
+
+  i{
+
+    color:@white;
+  }
 }
 
 .inactive{
@@ -1274,6 +1315,11 @@ margin-bottom:1em;
     box-shadow:0px 0px 6px rgba(0,0,0,0.2);
     min-height:55px;
     justify-content:space-between;
+
+
+  
+    
+
   }
 
   thead{
@@ -1507,16 +1553,25 @@ background-color:@primary;
 .form-check-input:checked:focus {
   border-color: @primary;
 }
+
+th{
+
+  position:relative;
+}
 .popover{
 
   position:absolute;
-  top:-50%;
+  top:0;
   left:0;
-z-index:99999;
-
+z-index:999999;
+transform:translate(-50%, -50%);
+.card-body{
+  padding: 5px 10px;
+}
 &.popover-right{
   left:unset;
   right:0;
+  transform:translate(0, -50%);
 }
   ul{
 
@@ -1528,8 +1583,8 @@ z-index:99999;
 
     li{
 
-      margin-top:5px;
-      margin-bottom:5px;
+      margin-top:15px;
+      margin-bottom:15px;
 
       a{
 
@@ -2184,7 +2239,7 @@ h3{
 }
 .steps li {
   display: flex;
-  flex: 1 1 6%;
+  flex: 1 1 24%;
   margin-left: 0;
   list-style-type: none;
   padding: 5px 5px 5px 30px;
@@ -2200,13 +2255,13 @@ h3{
   background:@greybg;
 }
 .steps li:nth-child(1) {
-  flex: 1 0 12%;
+  
 }
 .steps li:nth-child(1) a {
   padding-left: 0;
 }
 .steps li:nth-child(2) {
-  flex: 1 0 16%;
+
 }
 .steps li::after {
   content: "";
@@ -2348,7 +2403,12 @@ svg {
   display: inline-flex;
 }
 
+.icon-stepper{
 
+  display:inline-flex;
+  font-size:22px;
+  margin-right:0.4em;
+}
 /*End of Steps*/
 
 .table-status-project{
@@ -2362,7 +2422,7 @@ svg {
       flex-direction:row;
       justify-content:center;
       li{position:relative;
-       
+       display:flex;
     z-index:10;}
       &:before{
         z-index:0;
@@ -3171,5 +3231,67 @@ td{
             }
 
 
+#dropdownNotificationsMenu{
+padding-top:20px;
+  width:20vw !important;
+  height:80vh !important;
+  overflow:scroll-y !important;
+}
 
-          
+
+tr.accordion-item +tr {
+ box-shadow:none !important;
+min-height:10px !important;
+}
+.action-btn{
+  i{
+display:flex;
+    transition:all 0.3s;
+  }
+}
+
+.action-btn.active{
+background:@secondary;
+
+i{
+
+  color:@white;
+}
+  i.fa-chevron-down{
+  
+    transform:rotate(-540deg);
+  }
+}
+.comments{
+
+  list-style:none;
+  padding:10px;
+  background:@lightgreybg;
+}
+.comments .activity{
+
+  align-items:center;
+}
+.comments .activity .activity-text{
+
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+h5{
+  text-align:left;
+}
+
+td{
+
+  .tab-content{
+padding-top:1em;
+
+  }
+}
+
+.buttons .nav{
+
+  flex-wrap:unset;
+}

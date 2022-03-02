@@ -102,4 +102,23 @@ $('#product-1').click(function() {
   $("#individual-actions").toggleClass("open");
 });
 
+
+$('[data-mdb-toggle=tab]').click(function(){
+
+  if ($(this).hasClass('active')){
+    var url = $(this).attr('href');
+    var tid = url.split('#')[1];
+    console.log(tid);
+    //$('#'+tid).toggleClass('active');
+    $(this).closest(".tab-content").children().slideToggle();
+    $('#'+tid).slideToggle();
+
+    document.location.hash = '';
+  
+
+  }
+});
+
+
+
 });

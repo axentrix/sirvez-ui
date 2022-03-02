@@ -69,12 +69,75 @@
               
                 <div class="d-flex mui--text-right appbar-right">
                   <ul class="mui-list--inline mui--text-body2" id="topmenu">
-                    <li><a href="#"><i class="sir sir-icon-settings"></i></a></li>
-                    <li><a href="#"><i class="sir sir-icon-notification"></i></a></li>
+                    <li class="dropdown"><a href="#"  data-mdb-toggle="dropdown"
+                      aria-expanded="false" id="dropdownSettings"><i class="sir sir-icon-settings"></i></a>
+                    
+                      <ul class="dropdown-menu" aria-labelledby="dropdownSettings">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Company</a></li>
+                        <li><a class="dropdown-item" href="#">Helpdesk</a></li>
+                        <li><a class="dropdown-item" href="#">Stickers</a></li>
+                      </ul>
+                    
+                    </li>
+
+
+                    <li class="dropdown"><a href="#"  data-mdb-toggle="dropdown"
+                      aria-expanded="false" id="dropdownNotifications"><i class="sir sir-icon-notification"></i></a>
                    
+                      <ul   class="dropdown-menu" aria-labelledby="dropdownNotifications" id="dropdownNotificationsMenu">
+                        <li>
+
+                          <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar3.png"></div>
+                          <div class="badge locationbg"><i class="sir sir-icon-location"></i></div></div><div class="activity-text">Megan Hartop has created a new location Boardroom in project: Luton Boardroom Upgrade.<div class="date">07 Dec 2021  12:09 AM</div></div>
+                          
+                          
+                          </div>
+
+                        </li>
+                        <li>
+
+                          <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar2.png"></div>
+                          <div class="badge projectbg"><i class="sir sir-icon-projects"></i></div></div><div class="activity-text">Megan Hartop has created a new project: Luton Boardroom Upgrade.<div class="date">07 Dec 2021  12:09 AM</div></div>
+                          
+                          
+                          </div>
+
+                        </li>
+                      
+                        <li>
+
+                          <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar5.png"></div>
+                          <div class="badge taskbg"><i class="sir sir-icon-task"></i></div></div><div class="activity-text">   Chelsea Dougal has completed subtask(Delivery and Installation dates allocated? - ENG) in task: 20818 Burnt Ash Primary School JE.<div class="date">07 Dec 2021  12:09 AM</div></div>
+                          
+                          
+                          </div>
+
+                        </li>
+
+                        <li>
+
+                          <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar5.png"></div>
+                          <div class="badge userbg"><i class="sir sir-icon-user"></i></div></div><div class="activity-text">   Chelsea Dougal has added Mark Brooks as a team member for a new project: New Smart Screen on to Existing Loxit Trolley.<div class="date">07 Dec 2021  12:09 AM</div></div>
+                          
+                          
+                          </div>
+
+                        </li>
+                       
+                      </ul>
+                    </div>
+                    </li>
+
+                  
+                   
+
+
+
+
+                    
                   </ul>
-                </div>
-            
+                
         
 
 
@@ -94,12 +157,12 @@
 
    <div class="d-flex w-100 justify-content-between align-items-center"><h3 class="text-white">Projects</h3>
         
-        <div class="search input-group-lg mr-6 ml-6">
+        <div class="search input-group-lg ml-6">
           
           <input type="text" class="form-control" aria-label="Search" aria-describedby="inputGroup-sizing-lg"><span><i class="sir sir-icon-search"></i></span>
         </div>
         
-        <div class="ml-auto d-flex align-items-center"><a href="#" class="fab43"><i class="sir sir-icon-plus icon-small "></i></a></div>
+        <div class="ml-auto d-flex align-items-center d-none"><a href="#" class="fab43"><i class="sir sir-icon-plus icon-small "></i></a></div>
     
     
        
@@ -109,8 +172,8 @@
 
     <div class="d-flex w-100 align-items-center justify-content-start mt-4">
         <ul class="steps steps-5">
-            <li class="completed current stagecolor_0"><a href="#" class="link-button">All <span class="badge badge-circle-mini  ml-2 numberbg">6</span></a></li>
-            <li class="completed"><a href="#" class="link-button" >Prospect <span class="badge badge-circle-mini  ml-2 numberbg">1</span></a></li>
+            <li class="completed current stagecolor_0"><a href="#" class="link-button"> <span class="icon-stepper sir sir-icon-projects"></span>All <span class="badge badge-circle-mini  ml-2 numberbg">6</span></a></li>
+            <li class="completed"><a href="#" class="link-button" ><span class="icon-stepper sir sir-icon-calendar"></span> Prospect <span class="badge badge-circle-mini  ml-2 numberbg">1</span></a></li>
             <li class="stage-current">
                 <div class="hourglass ml-2 mr-1">
                     <svg width="22px" height="42px" viewBox="0 0 73 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -143,7 +206,7 @@
                    Installation <span class="badge badge-circle-mini  ml-2 numberbg">3</span>
                 </a>
             </li>
-            <li class=""><a href="#" class="link-button" >Sign Off <span class="badge badge-circle-mini  ml-2 numberbg">2</span></a></li>
+            <li class=""><a href="#" class="link-button" ><span class="icon-stepper siz siz-icon-signin1"></span> Sign Off <span class="badge badge-circle-mini  ml-2 numberbg">2</span></a></li>
            
         </ul>
 
@@ -162,7 +225,7 @@
          
 
 
-          <div class="ml-auto">
+          <div class="ml-auto d-flex">
             <a href="#" class="filter-pill selected">All</a>
             <a href="#" class="filter-pill"><i class="sir sir-icon-star-empty mr-2"></i>Starred</a>
            
@@ -179,11 +242,24 @@
                 <th>Location</th>
                 <th>Products</th>
                 <th>Stage</th>
-               <th><a href="#" class="fab43-default m-1" data-mdb-toggle="tooltip" title="" data-mdb-original-title="Filter Products" aria-label="Filter Products"><i class="sir sir-icon-filter icon-small"></i></a></th>
+               <th><a href="#" class="fab43-default m-1 action-btn"><i class="sir sir-icon-filter icon-small"></i></a>
+              
+                <div id="actions-projects" class="popover actions card">
+                  <div class="card-body">
+                    <ul>
+                    <li><a href="">Project Title</a></li>
+    <li><a href="">Customer</a></li>
+    <li><a href="">Location</a></li>
+    <li><a href="">Products</a></li>
+    <li><a href="">Stage</a></li>
+                 </ul></div></div>
+              
+              
+              </th>
               </tr>
             </thead>
             <tbody>
-              <tr class="critical">
+              <tr >
                 
                 <td><a href="#" class="btn-add-favourite mt-2"><i class="sir sir-icon-star-empty"></i></a></td>
                 <td >	<a class="product-title" href="project-details-app.html" data-mdb-toggle="tooltip" data-mdb-original-title="Replace the 4065 board on the power lift in year 4 classroom with the 6065 board , on the Loxit height adjustment trolley in the training room."> Replace the 4065 board on the power lift in year 4 classroom with the 6065 board , on the Loxit height adjustment trolley in the training room.</a></td>
@@ -210,16 +286,16 @@
                 <div class="card-body">
                   <ul>
                   <li><a href="project-details-app.html">Overview</a></li>
- 
+                  <li><a href="#" data-mdb-toggle="modal" data-mdb-target="#testing-form">Sign Off</a></li>
                </ul></div></div></div>
                 </td>
 
               
               </tr>
-              <tr class="high">
+              <tr >
                 
                 <td><a href="#" class="btn-add-favourite mt-2"><i class="sir sir-icon-star-empty"></i></a></td>
-                <td >	<span class="product-title" data-mdb-toggle="tooltip" data-mdb-original-title="Replace the 4065 board on the power lift in year 4 classroom with the 6065 board , on the Loxit height adjustment trolley in the training room."> Replace the 4065 board on the power lift in year 4 classroom with the 6065 board , on the Loxit height adjustment trolley in the training room.</span></td>
+                <td >	<a class="product-title" data-mdb-toggle="tooltip" data-mdb-original-title="Replace the 4065 board on the power lift in year 4 classroom with the 6065 board , on the Loxit height adjustment trolley in the training room."> Replace the 4065 board on the power lift in year 4 classroom with the 6065 board , on the Loxit height adjustment trolley in the training room.</a></td>
                 <td>Customer</td>
                 <td class="lightgreybg">Location</td>
                 <td>Products</td>
@@ -292,6 +368,27 @@
      
     </div>
    
+
+
+    <div class="modal  fade" id="testing-form" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg mui-panel">
+        <div class="modal-content mui-panel-content p-4">
+
+          <div class="d-flex justify-content-between">
+
+            <div>
+          <h5>Sign Off</h5>
+<h3>Project Name</h3>
+<span class="date">#54543</span>
+</div>
+<div class="d-flex">
+  <a href="#" class="mui-btn">Cancel</a>
+
+  <button class="mui-btn mui-btn--primary"><i class="sir sir-icon-sign-off mr-2"></i>Sign Off</button>
+</div>
+</div>
+
+        </div></div></div>
 
 <!-- <script src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
