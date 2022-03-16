@@ -53,36 +53,99 @@
         
       </div>
     </div>
-      <header id="header" class="app-header">
-        <div class="mui-appbar mui--appbar-line-height">
-       
-          
+    <header id="header" class="app-header">
+      <div class="mui-appbar mui--appbar-line-height">
+     
+        
 <div class="appbar-left"> <ul>
-    <li class="mui-dropdown"><a href="#" data-mui-toggle="dropdown" class="d-flex"><div class="avatar mt-1mb-1 ml-2"><img src="assets/images/avatars/avatar1.png"></div>
-        <ul class="mui-dropdown__menu ">
-                    <li><a href="#">My Profile</a></li>
-                    <li><a href="#">Logout</a></li>
-                
-                  </ul></a>
-                  </li></ul> </div>
-                
-                
-                  <div class="d-flex mui--text-right appbar-right" >
-                    <ul class="mui-list--inline mui--text-body2" id="topmenu">
-                      <li><a href="#"><i class="sir sir-icon-settings"></i></a></li>
-                      <li><a href="#"><i class="sir sir-icon-notification"></i></a></li>
-                     
-                    </ul>
-                  </div>
+  <li class="mui-dropdown"><a href="#" data-mui-toggle="dropdown" class="d-flex"><div class="avatar mt-1mb-1 ml-2"><img src="assets/images/avatars/avatar1.png"></div>
+      </a><ul class="mui-dropdown__menu "><a href="#" data-mui-toggle="dropdown" class="d-flex">
+                  </a><li><a href="#" data-mui-toggle="dropdown" class="d-flex"></a><a href="#">My Profile</a></li>
+                  <li><a href="#">Logout</a></li>
               
-          
+                </ul>
+                </li></ul> </div>
+              
+              
+                <div class="d-flex mui--text-right appbar-right">
+                  <ul class="mui-list--inline mui--text-body2" id="topmenu">
+                    <li class="dropdown"><a href="#"  data-mdb-toggle="dropdown"
+                      aria-expanded="false" id="dropdownSettings"><i class="sir sir-icon-settings"></i></a>
+                    
+                      <ul class="dropdown-menu" aria-labelledby="dropdownSettings">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Company</a></li>
+                        <li><a class="dropdown-item" href="#">Helpdesk</a></li>
+                        <li><a class="dropdown-item" href="#">Stickers</a></li>
+                      </ul>
+                    
+                    </li>
+
+
+                    <li class="dropdown"><a href="#"  data-mdb-toggle="dropdown"
+                      aria-expanded="false" id="dropdownNotifications"><i class="sir sir-icon-notification"></i></a>
+                   
+                      <ul   class="dropdown-menu" aria-labelledby="dropdownNotifications" id="dropdownNotificationsMenu">
+                        <li>
+
+                          <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar3.png"></div>
+                          <div class="badge locationbg"><i class="sir sir-icon-location"></i></div></div><div class="activity-text">Megan Hartop has created a new location Boardroom in project: Luton Boardroom Upgrade.<div class="date">07 Dec 2021  12:09 AM</div></div>
+                          
+                          
+                          </div>
+
+                        </li>
+                        <li>
+
+                          <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar2.png"></div>
+                          <div class="badge projectbg"><i class="sir sir-icon-projects"></i></div></div><div class="activity-text">Megan Hartop has created a new project: Luton Boardroom Upgrade.<div class="date">07 Dec 2021  12:09 AM</div></div>
+                          
+                          
+                          </div>
+
+                        </li>
+                      
+                        <li>
+
+                          <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar5.png"></div>
+                          <div class="badge taskbg"><i class="sir sir-icon-task"></i></div></div><div class="activity-text">   Chelsea Dougal has completed subtask(Delivery and Installation dates allocated? - ENG) in task: 20818 Burnt Ash Primary School JE.<div class="date">07 Dec 2021  12:09 AM</div></div>
+                          
+                          
+                          </div>
+
+                        </li>
+
+                        <li>
+
+                          <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar5.png"></div>
+                          <div class="badge userbg"><i class="sir sir-icon-user"></i></div></div><div class="activity-text">   Chelsea Dougal has added Mark Brooks as a team member for a new project: New Smart Screen on to Existing Loxit Trolley.<div class="date">07 Dec 2021  12:09 AM</div></div>
+                          
+                          
+                          </div>
+
+                        </li>
+                       
+                      </ul>
+                    </div>
+                    </li>
+
+                  
+                   
 
 
 
 
-         
-        </div>
-      </header>
+                    
+                  </ul>
+                
+        
+
+
+
+
+       
+      </div>
+    </header>
       <div id="content-wrapper">
        
         
@@ -121,7 +184,24 @@
             <div class="d-flex align-items-center"><span class="id mr-2">#123</span><span class="badge"><i class="sir sir-icon-live-project"></i>Live</span></div></div>
             
             
-            <div class="ml-auto d-flex"> <button class="mui-btn">Actions <i class="sir sir-icon-more-actions"></i></button>
+            <div class="ml-auto d-flex"> <div class="dropdown mr-2"><button class="mui-btn" data-mdb-toggle="dropdown"
+              aria-expanded="false">Actions <i class="sir sir-icon-more-actions"></i></button>
+            
+               
+                       
+              <ul   class="dropdown-menu" aria-labelledby="dropdownActions" id="dropdownActions">
+                           
+    
+                <li><a href="#" class="dropdown-item">Modify</a> </li>
+    <li><a href="#" class="dropdown-item">Job Sheet</a> </li>
+    
+    <li><a href="#" class="dropdown-item">Job Sheet</a> </li>
+    
+    <li><a href="#" class="dropdown-item">Customer Sign-Off</a> </li>
+    
+    <li><a href="#" class="dropdown-item">Move to Install Stage</a> </li>        
+    <li><a href="#" class="text-red dropdown-item">Delete Project</a> </li>    </ul>              
+            </div>
               <button class="mui-btn mui-btn--primary">Sign Off <i class="sir sir-icon-sign-off"></i></button></div>
             </div>
             
@@ -151,7 +231,7 @@
             <div class="btn-icons d-flex align-items-center justify-content-between">
 
 
-  <a href="#" class="mui-btn mr-2 ml-4 action-btn">
+  <a href="#" class="mui-btn mr-2 ml-4 action-btn" data-mdb-toggle="modal" data-mdb-target="#add-survey-form">
     <i class="siz siz-icon-location-survey icon-medium"></i>Add Survey Form</a>
     
         
@@ -182,7 +262,7 @@
 <div class="col-md-5">
 <div class="mui-panel img-panel d-relative m-2  p-2"><figure>
     <div class="d-flex align-items-center buttons">
-    <a href="#" class="fab43-default mr-2"><i class="sir sir-icon-edit"></i></a>
+    <a href="image-modify.html" class="fab43-default mr-2"><i class="sir sir-icon-edit"></i></a>
     <a href="#" class="fab43-default"><i class="sir sir-icon-remove"></i></a></div>
 <img src="assets/images/location.jpg"></figure>
 <a href="#" class="d-flex mt-2 ml-auto mr-2 mb-2"><i class="sir sir-icon-comment icon-large mr-2"></i>View Comments <strong class="ml-2">3</strong></a>
@@ -291,7 +371,7 @@
                   <div class="d-flex d-column">
                   <span class="product-title" data-mdb-toggle="tooltip" data-mdb-original-title="The full task name, although maybe this is useless for tablet">MASTER [SO] - [Customer] - [BDM] - Title__copy_copy_copy - ID 1984</span><div class="d-flex"></div></div></div></td>
                 <td width="15%">4th Jan, 2022</td>
-                <td><div class="workflow mr-2 workflowbg d-flex align-items-start p-2"><i class="sir sir-icon-workflow mt-1 mr-2 icon-large"></i><a href="workflow.html">Workflow Name</a></div></td>
+                <td><div class="workflow mr-2 workflowbg d-flex align-items-start p-2"><i class="sir sir-icon-workflow mt-1 mr-2 icon-large"></i><a href="workflows.html">Workflow Name</a></div></td>
               
                 <td>  <div class="activity feed-line d-flex"><div class="avatar-with-badge"><div class="avatar"><img src="assets/images/avatars/avatar1.png"></div>
                     <div class="badge normalbg"><i class="sir sir-icon-tick"></i></div></div><div class="activity-text">Anna Notovska marked as done<div class="date">Yesterday</div></div>
@@ -418,7 +498,19 @@
 
      
     </div>
-   
+    <div class="modal fade" id="add-survey-form" tabindex="-1"  aria-hidden="true">
+      <div class="modal-dialog  mui-panel">
+        <div class="modal-content mui-panel-content">
+<h4>Select survey form from the list</h4>
+
+          <select class="form-select mr-2">
+            <option>Select survey form...</option>
+            <option>Form 1</option>
+            <option>Survey Form 2</option>
+           
+          
+          </select>
+          </div></div></div>
 
 <!-- <script src="//unpkg.com/react@16/umd/react.production.min.js"></script>
 <script src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
